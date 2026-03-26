@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://campalta.net/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://campalta.net/index/index_3.webp</image:loc>
+      <image:title>Camp Alta Kiruna - Arctic Wilderness Camp</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/TheCamp</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/Cabins</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/LakesideAuroraCabins</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/Tours</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/Prices</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/FaQ</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Booking Pages -->
+  <url>
+    <loc>https://campalta.net/Booking</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/booking/Booking-cabins</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/booking/Booking-tours</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/booking/Booking-services</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/Booking-lakeside</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Individual Cabin Pages -->
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-D123</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/d.webp</image:loc>
+      <image:title>Cabin D1-2-3 - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-2ab</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/2ab.webp</image:loc>
+      <image:title>Cabin 2A-B - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-2c</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/2c.webp</image:loc>
+      <image:title>Cabin 2C - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-3</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/3.webp</image:loc>
+      <image:title>Cabin 3 - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-4ab</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/4ab.webp</image:loc>
+      <image:title>Cabin 4A-B - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-4c</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/4c.webp</image:loc>
+      <image:title>Cabin 4C - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-4d</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/4d.webp</image:loc>
+      <image:title>Cabin 4D - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-5</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/5.webp</image:loc>
+      <image:title>Cabin 5 - 1 bedroom, 12m2, 1 double bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-6ac</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/6ac.webp</image:loc>
+      <image:title>Cabin 6A-C - 1 bedroom, 40m2, 2 single beds and 1 double sofa bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-6b</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/6b.webp</image:loc>
+      <image:title>Cabin 6B - 1 bedroom, 25m2, 1 double bed and 1 bunk bed</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-13a</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/13a.webp</image:loc>
+      <image:title>Cabin 13A - 90m2, 3 bedrooms and 1 bathroom</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-13b</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/13b.webp</image:loc>
+      <image:title>Cabin 13B - 130m2, 2 bedrooms and 1 bathroom</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins/Cabin-14</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/14.webp</image:loc>
+      <image:title>Cabin 14 - 162m2, 4 bedrooms and 1 bathroom</image:title>
+    </image:image>
+  </url>
+
+  <!-- Individual Lakeside Cabin Pages -->
+  <url>
+    <loc>https://campalta.net/cabins-lakeside/Cabin-4e</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins-lakeside/Cabin-4f</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins-lakeside/Cabin-6d</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/cabins-lakeside/Cabin-8b</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tour Pages -->
+  <url>
+    <loc>https://campalta.net/tours/Snowmobile-tours</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://campalta.net/tours/snowmobile/mob/snowmobile_mob_1.webp</image:loc>
+      <image:title>Snowmobile Tour - 32 km to the Icehotel</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/tours/Dogsled-tour</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://campalta.net/tours/dogsled/dogsled_6b.webp</image:loc>
+      <image:title>Dogsled Tour with Coffee</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/tours/Northern-lights-tour</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://campalta.net/tours/northern/northern_16.webp</image:loc>
+      <image:title>Northern Lights Tour in Abisko National Park</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/tours/Aurora-adventure-safari</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://campalta.net/tours/safari/safari_1.webp</image:loc>
+      <image:title>Aurora Adventure Safari - Northern Lights by snowmobile sled at Camp Alta Kiruna</image:title>
+    </image:image>
+  </url>
+
+  <!-- The Camp Sub-Pages -->
+  <url>
+    <loc>https://campalta.net/theCamp/AboutCamp</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/theCamp/AboutUs</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/theCamp/BeInspired</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/theCamp/Kiruna</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/theCamp/Summer</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/theCamp/GetHere</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Legal/Documentation Pages -->
+  <url>
+    <loc>https://campalta.net/docs/Privacy</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/docs/Cookies</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/docs/Legal</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/docs/Environmental</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

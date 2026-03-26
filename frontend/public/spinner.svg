@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 866.32" style="enable-background:new 0 0 1024 866.32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000032631715285491900820000008096470388497461657_);}
+	.st2{fill:url(#SVGID_00000183242810168684443390000002424490310002125495_);}
+	.st3{fill:url(#SVGID_00000101103415145679654570000000321732534420174978_);}
+	.st4{fill:url(#SVGID_00000112631324203540426400000014125600913930715032_);}
+	.st5{fill:url(#SVGID_00000125571143561067199090000007297497917609393556_);}
+	.st6{fill:url(#SVGID_00000038376094256295696290000007173254889230391682_);}
+	.st7{fill:url(#SVGID_00000030455341803647510430000007707088368137047470_);}
+	.st8{fill:url(#SVGID_00000046318686390429038340000011498245520538555016_);}
+	.st9{fill:url(#SVGID_00000054253503960595527170000018242203282548733581_);}
+	.st10{fill:url(#SVGID_00000134954669204440354700000016522359301142486666_);}
+	.st11{fill:url(#SVGID_00000075867162915482761160000009224150771662736043_);}
+	.st12{fill:url(#SVGID_00000180335932884449187010000000823727395288367761_);}
+	.st13{fill:url(#SVGID_00000136390968318286650570000012399290394143109023_);}
+	.st14{fill:url(#SVGID_00000150794098124606617380000007132404576098099875_);}
+	.st15{fill:url(#SVGID_00000011731425262738911330000017106476101876717202_);}
+	.st16{fill:url(#SVGID_00000086671242927475908750000008280466660957065628_);}
+	.st17{fill:url(#SVGID_00000164508069003149853690000013363274482655303314_);}
+	.st18{fill:url(#SVGID_00000180360859454562589190000005224221266267189411_);}
+	.st19{fill:url(#SVGID_00000150096701675913733050000003593086010888905142_);}
+	.st20{fill:url(#SVGID_00000048467257446305438850000005808782907664610435_);}
+	.st21{fill:url(#SVGID_00000116224387850951278830000009029258512360007309_);}
+	.st22{fill:url(#SVGID_00000173148815740149997560000012671092937010055595_);}
+	.st23{fill:url(#SVGID_00000140016821997966351590000005011947127215656846_);}
+	.st24{fill:url(#SVGID_00000013190251779990035150000013452621842514207164_);}
+	.st25{fill:url(#SVGID_00000068662887395684617220000004959208931252797844_);}
+	.st26{fill:url(#SVGID_00000087405119325397857980000002637437442437336734_);}
+	.st27{fill:url(#SVGID_00000155112957011798605590000006383040830585371817_);}
+	.st28{fill:url(#SVGID_00000073717380835369479870000007060753553527377809_);}
+	.st29{fill:url(#SVGID_00000044171612368904090190000003678333371074577547_);}
+	.st30{fill:url(#SVGID_00000070108505898733869370000012989742733705279135_);}
+	.st31{fill:url(#SVGID_00000121262877791110067520000014967690094676638393_);}
+	.st32{fill:url(#SVGID_00000173854247120286749400000000023503571534514827_);}
+	.st33{fill:url(#SVGID_00000171690190410711326530000014970946115852299141_);}
+</style>
+<g>
+	<g>
+		<g>
+			<path d="M60.91,821.07c-7.95,0-14.29-1.94-19.01-5.82c-4.72-3.88-8.11-9.58-10.16-17.1c-2.05-7.52-3.08-16.65-3.08-27.4v-68.31
+				c0-7.21,0.47-13.81,1.4-19.81c0.93-6,2.59-11.18,4.99-15.56c2.39-4.38,5.73-7.77,10.02-10.16c4.29-2.39,9.79-3.59,16.5-3.59
+				c6.4,0,11.62,1.13,15.66,3.4c4.04,2.27,7.18,5.5,9.41,9.69c2.24,4.19,3.77,9.17,4.61,14.91c0.84,5.75,1.26,12.1,1.26,19.06v18.17
+				H73.59v-18.27c0-10.19-0.73-17.81-2.19-22.88c-1.46-5.06-4.74-7.6-9.83-7.6c-5.41,0-9.03,2.6-10.86,7.78
+				c-1.83,5.19-2.75,12.72-2.75,22.6v71.02c0,7.95,0.34,14.4,1.03,19.34c0.68,4.94,1.97,8.53,3.87,10.76
+				c1.9,2.24,4.61,3.35,8.16,3.35c5.16,0,8.54-2.61,10.16-7.83c1.62-5.22,2.42-13.79,2.42-25.72v-18.17h19.11v17.99
+				c0,10.94-0.95,20.13-2.84,27.59c-1.9,7.46-5.14,13.08-9.74,16.87C75.51,819.17,69.11,821.07,60.91,821.07z"/>
+			<path d="M141.68,819.11l24.88-164.03h23.21l27.12,164.03h-18.17l-4.66-31.31h-29.73l-4.29,31.31H141.68z M166.47,772.14h25.16
+				l-12.95-86.68h-0.28L166.47,772.14z"/>
+			<path d="M269.33,819.11V655.08h22.18l25.35,131.13L341,655.08h22.27v164.03h-16.5v-62.07l1.58-61.32l-24.7,123.39h-13.79
+				l-25.72-123.39l1.58,61.32v62.07H269.33z"/>
+			<path d="M424.47,819.11V655.08h32.99c6.52,0,11.82,1.09,15.89,3.26c4.07,2.18,7.19,5.31,9.37,9.41c2.17,4.1,3.65,9.04,4.43,14.82
+				c0.78,5.78,1.17,12.27,1.17,19.48v2.52c0,11-0.85,20.22-2.56,27.68c-1.71,7.46-4.79,13.07-9.23,16.82
+				c-4.44,3.76-10.8,5.64-19.06,5.64h-13.7v64.4H424.47z M443.77,738.68h11.74c3.79,0,6.65-1.07,8.57-3.21
+				c1.93-2.14,3.25-5.7,3.96-10.67c0.71-4.97,1.07-11.71,1.07-20.22v-3.17c0-10.56-0.81-18.37-2.42-23.44
+				c-1.62-5.06-5.19-7.6-10.72-7.6h-12.21V738.68z"/>
+			<path d="M613.79,819.11l24.88-164.03h23.21L689,819.11h-18.17l-4.66-31.31h-29.73l-4.29,31.31H613.79z M638.58,772.14h25.16
+				l-12.95-86.68h-0.28L638.58,772.14z"/>
+			<path d="M741.43,819.11V655.08h19.29v148.09h30.29v15.94H741.43z"/>
+			<path d="M842.8,819.11v-148h-18.08v-16.03h54.15v16.03H862v148H842.8z"/>
+			<path d="M920.12,819.11l24.88-164.03h23.21l27.12,164.03h-18.17l-4.66-31.31h-29.73l-4.29,31.31H920.12z M944.91,772.14h25.16
+				l-12.95-86.68h-0.28L944.91,772.14z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="407.1288" y1="96.0559" x2="407.1288" y2="536.1298">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop><!--primero-->
+			</linearGradient>
+			<path class="st0" d="M412.66,452.16l-5.75-281.45l-5.31,295.8C405.36,461.74,409.05,456.95,412.66,452.16z"/>			
+				<linearGradient id="SVGID_00000156548256910062190180000007528303140520091782_" gradientUnits="userSpaceOnUse" x1="432.7348" y1="91.1057" x2="432.7348" y2="495.6555">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000156548256910062190180000007528303140520091782_);" d="M437.79,417.19l-4.53-257.45
+				l-5.58,271.92C431.14,426.8,434.51,421.97,437.79,417.19z"/>
+			
+				<linearGradient id="SVGID_00000147932617197052268290000005243400439310508967_" gradientUnits="userSpaceOnUse" x1="511.9287" y1="-19.1724" x2="511.9287" y2="360.5735">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop><!--segundo-->
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000147932617197052268290000005243400439310508967_);" d="M512.09,292.28c0,0,1.32,2.7,3.85,7.6
+				l-3.72-254.64l-4.31,255.25C510.65,295.21,512.09,292.28,512.09,292.28z"/>
+			
+				<linearGradient id="SVGID_00000158743097240457647070000015019572810953417382_" gradientUnits="userSpaceOnUse" x1="459.4596" y1="-23.0453" x2="459.4596" y2="470.3574">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000158743097240457647070000015019572810953417382_);" d="M464.55,376.26l-4.91-315.6
+				l-5.27,331.64C457.9,386.83,461.3,381.48,464.55,376.26z"/>
+			
+				<linearGradient id="SVGID_00000149371503948063874050000003362837375638936763_" gradientUnits="userSpaceOnUse" x1="380.4068" y1="75.0722" x2="380.4068" y2="578.803">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000149371503948063874050000003362837375638936763_);" d="M386.37,485.26l-5.84-324.73
+				l-6.09,338.58C378.48,494.54,382.46,489.92,386.37,485.26z"/>
+			
+				<linearGradient id="SVGID_00000083081185567131221870000004009105331670282377_" gradientUnits="userSpaceOnUse" x1="328.3323" y1="60.0293" x2="328.3323" y2="642.9556">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000083081185567131221870000004009105331670282377_);" d="M334.04,540.58l-5.89-381.66
+				l-5.52,391.81C326.47,547.44,330.27,544.05,334.04,540.58z"/>
+			
+				<linearGradient id="SVGID_00000036216207484684437020000017202643526071932331_" gradientUnits="userSpaceOnUse" x1="353.5779" y1="83.2943" x2="353.5779" y2="610.4362">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000036216207484684437020000017202643526071932331_);" d="M358.98,515.99l-5.15-343.26
+				l-5.66,354.32C351.82,523.42,355.42,519.73,358.98,515.99z"/>
+			
+				<linearGradient id="SVGID_00000164479544573618394340000006639285816063953814_" gradientUnits="userSpaceOnUse" x1="671.5667" y1="118.8951" x2="671.5667" y2="607.0801">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000164479544573618394340000006639285816063953814_);" d="M678.84,529.85l-7.32-328.13
+				l-7.23,313.33C669.07,520.08,673.92,525.03,678.84,529.85z"/>
+			
+				<linearGradient id="SVGID_00000183229844502131588530000011161608393699863714_" gradientUnits="userSpaceOnUse" x1="301.4706" y1="27.214" x2="301.4706" y2="674.4374">
+			<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000183229844502131588530000011161608393699863714_);" d="M307.49,563.11l-5.99-426.1
+				l-6.05,435.03C299.49,569.18,303.51,566.2,307.49,563.11z"/>
+			
+				<linearGradient id="SVGID_00000107553475767940116770000007029979323133407149_" gradientUnits="userSpaceOnUse" x1="696.6227" y1="-19.5767" x2="696.6227" y2="660.9567">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000107553475767940116770000007029979323133407149_);" d="M704.56,553.3l-8.01-457.42
+				l-7.86,443.37C693.91,544.09,699.2,548.78,704.56,553.3z"/>
+			
+				<linearGradient id="SVGID_00000096748030812092478080000009233168413812051333_" gradientUnits="userSpaceOnUse" x1="644.6391" y1="109.576" x2="644.6391" y2="574.5213">
+			<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000096748030812092478080000009233168413812051333_);" d="M651.37,500.97l-6.87-312.51
+				l-6.6,296.93C642.31,490.63,646.8,495.84,651.37,500.97z"/>
+			
+				<linearGradient id="SVGID_00000175303164188111723380000011875574941229329538_" gradientUnits="userSpaceOnUse" x1="538.6901" y1="-13.0476" x2="538.6901" y2="417.3622">
+			<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000175303164188111723380000011875574941229329538_);" d="M543.29,349.27l-4.69-289.3
+				l-4.51,273.35C536.91,338.3,539.98,343.64,543.29,349.27z"/>
+			
+				<linearGradient id="SVGID_00000093863198505983554370000011341308946605398658_" gradientUnits="userSpaceOnUse" x1="723.5499" y1="4.6651" x2="723.5499" y2="681.1841">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000093863198505983554370000011341308946605398658_);" d="M715.36,562.08
+				c5.4,4.23,10.86,8.27,16.38,12.08l-8.35-454.72L715.36,562.08z"/>
+			
+				<linearGradient id="SVGID_00000058589890254257133450000010505453674920271275_" gradientUnits="userSpaceOnUse" x1="617.6259" y1="102.8967" x2="617.6259" y2="535.2563">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000058589890254257133450000010505453674920271275_);" d="M622.84,466.86l-5.38-290.61
+				l-5.06,277.09C615.82,457.85,619.3,462.36,622.84,466.86z"/>
+			
+				<linearGradient id="SVGID_00000034090299354485576680000008553418063441938083_" gradientUnits="userSpaceOnUse" x1="565.5891" y1="30.318" x2="565.5891" y2="461.8878">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000034090299354485576680000008553418063441938083_);" d="M570.65,393.61l-5.21-290.08
+				l-4.92,274.18C563.76,382.89,567.14,388.2,570.65,393.61z"/>
+			
+				<linearGradient id="SVGID_00000026155078768895033760000006299004479367948722_" gradientUnits="userSpaceOnUse" x1="590.7108" y1="67.2793" x2="590.7108" y2="499.723">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000026155078768895033760000006299004479367948722_);" d="M596.25,431.31l-5.76-290.67
+				l-5.32,274.78C588.76,420.67,592.45,425.97,596.25,431.31z"/>
+			
+				<linearGradient id="SVGID_00000034785486408248818110000013846118114647911310_" gradientUnits="userSpaceOnUse" x1="486.1127" y1="-28.0351" x2="486.1127" y2="418.8427">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000034785486408248818110000013846118114647911310_);" d="M490.68,332.26l-4.69-284.48
+				l-4.45,300.37C484.83,342.53,487.88,337.21,490.68,332.26z"/>
+			
+				<linearGradient id="SVGID_00000117635156460596532240000017352865893357166492_" gradientUnits="userSpaceOnUse" x1="854.5272" y1="67.2123" x2="854.5272" y2="675.3434">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<animate attributeName="offset" values="0;0.6793;1;0.6793;0" dur="2s" repeatCount="indefinite"/>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000117635156460596532240000017352865893357166492_);" points="846.96,579.14 862.09,579.14 
+				854.74,170.38 			"/>
+			
+				<linearGradient id="SVGID_00000122692806333769198340000009118587889077991344_" gradientUnits="userSpaceOnUse" x1="802.4135" y1="-55.6063" x2="802.4135" y2="698.425">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000122692806333769198340000009118587889077991344_);" points="794.43,579.14 810.4,579.14 
+				802.33,72.31 			"/>
+			
+				<linearGradient id="SVGID_00000102524281599524115260000009454855571420924048_" gradientUnits="userSpaceOnUse" x1="829.3463" y1="-21.5548" x2="829.3463" y2="692.0256">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000102524281599524115260000009454855571420924048_);" points="821.57,579.14 837.12,579.14 
+				828.9,99.5 			"/>
+			
+				<linearGradient id="SVGID_00000174596840720156304170000001799312311997865380_" gradientUnits="userSpaceOnUse" x1="775.5053" y1="-38.2067" x2="775.5053" y2="695.155">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000174596840720156304170000001799312311997865380_);" points="767.39,579.14 783.62,579.14 
+				775.8,86.21 			"/>
+			
+				<linearGradient id="SVGID_00000114791442267660288720000017121367262073171388_" gradientUnits="userSpaceOnUse" x1="750.3614" y1="-22.9065" x2="750.3614" y2="692.2797">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000114791442267660288720000017121367262073171388_);" points="742.1,579.14 758.63,579.14 
+				749.99,98.42 			"/>
+			
+				<linearGradient id="SVGID_00000047764868348813508810000005553925440047317378_" gradientUnits="userSpaceOnUse" x1="933.4998" y1="56.2693" x2="933.4998" y2="677.4">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000047764868348813508810000005553925440047317378_);" points="933.65,161.64 926.42,579.14 
+				940.58,579.14 			"/>
+			
+				<linearGradient id="SVGID_00000086672544954312448060000003530817105786769026_" gradientUnits="userSpaceOnUse" x1="908.3312" y1="53.4795" x2="908.3312" y2="677.9243">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000086672544954312448060000003530817105786769026_);" points="901.13,579.14 915.54,579.14 
+				908.21,159.42 			"/>
+			
+				<linearGradient id="SVGID_00000052792118188297714440000000744448935629819547_" gradientUnits="userSpaceOnUse" x1="881.4354" y1="107.3034" x2="881.4354" y2="667.8091">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000052792118188297714440000000744448935629819547_);" points="874.06,579.14 888.81,579.14 
+				881.41,202.39 			"/>
+			
+				<linearGradient id="SVGID_00000083058949632879273070000002265493769053260476_" gradientUnits="userSpaceOnUse" x1="143.5519" y1="103.2052" x2="143.5519" y2="668.5793">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000083058949632879273070000002265493769053260476_);" points="137.83,579.14 149.28,579.14 
+				143.55,199.12 			"/>
+			
+				<linearGradient id="SVGID_00000080175381998505882830000004403200122239832742_" gradientUnits="userSpaceOnUse" x1="89.7232" y1="6.5436" x2="89.7232" y2="686.7451">
+					<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000080175381998505882830000004403200122239832742_);" points="83.59,579.14 95.85,579.14 
+				89.93,121.94 			"/>
+			
+				<linearGradient id="SVGID_00000054973398956194597230000009640559330963419826_" gradientUnits="userSpaceOnUse" x1="116.6314" y1="60.7557" x2="116.6314" y2="676.5569">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000054973398956194597230000009640559330963419826_);" points="110.71,579.14 122.55,579.14 
+				116.63,165.23 			"/>
+			
+				<linearGradient id="SVGID_00000175304621229149633490000005640238536790430892_" gradientUnits="userSpaceOnUse" x1="170.4847" y1="178.5127" x2="170.4847" y2="654.4266">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000175304621229149633490000005640238536790430892_);" points="164.8,579.14 176.17,579.14 
+				170.47,259.25 			"/>
+			
+				<linearGradient id="SVGID_00000039841732476648867510000003628462476613848708_" gradientUnits="userSpaceOnUse" x1="249.3463" y1="-16.3637" x2="249.3463" y2="691.05">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000039841732476648867510000003628462476613848708_);" points="243.24,579.14 255.45,579.14 
+				248.74,103.65 			"/>
+			
+				<linearGradient id="SVGID_00000041274949549375756230000007519086448757525422_" gradientUnits="userSpaceOnUse" x1="274.6875" y1="-71.0647" x2="274.6875" y2="701.3301">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000041274949549375756230000007519086448757525422_);" points="268.53,579.14 280.84,579.14 
+				275.12,59.97 			"/>
+			
+				<linearGradient id="SVGID_00000138558615889739432940000001387657965032021388_" gradientUnits="userSpaceOnUse" x1="222.5368" y1="32.2692" x2="222.5368" y2="681.9104">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>				
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#036F98;  #60BF80; #036F98" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000138558615889739432940000001387657965032021388_);" points="216.49,579.14 228.58,579.14 
+				222.41,142.48 			"/>
+			
+				<linearGradient id="SVGID_00000155137118165485367640000015072807558497237171_" gradientUnits="userSpaceOnUse" x1="195.678" y1="49.8702" x2="195.678" y2="678.6026">
+				<stop  offset="0" style="stop-color:#60BF80;stop-opacity:0.1">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+ 				</stop>
+				<stop  offset="0.2816" style="stop-color:#60BF80">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.6793" style="stop-color:#008791">
+					<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.7632" style="stop-color:#008492">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="0.8902" style="stop-color:#007A96">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+				<stop  offset="1" style="stop-color:#036F98">
+				<animate attributeName="stop-color" values="#60BF80;  #036F98; #60BF80" dur="2s" repeatCount="indefinite"></animate>
+				</stop>
+			</linearGradient>
+			<polygon style="fill:url(#SVGID_00000155137118165485367640000015072807558497237171_);" points="189.67,579.14 201.69,579.14 
+				195.89,156.53 			"/>
+		</g>
+		
+			<linearGradient id="SVGID_00000145768924764594598550000009567653288203124629_" gradientUnits="userSpaceOnUse" x1="512.0864" y1="435.3896" x2="512.0864" y2="618.1444">
+			<stop  offset="0" style="stop-color:#60BF80">
+				<animate attributeName="stop-color" values="#60BF80;#008791;#008492;#007A96;#036F98;#007A96;#008492;#008791;#60BF80" dur="5s" repeatCount="indefinite"></animate>
+			</stop>
+			
+		</linearGradient>
+		<path style="fill:url(#SVGID_00000145768924764594598550000009567653288203124629_);" d="M581.89,579.6H442.28
+			c29.61-53.75,69.8-199.79,69.8-199.79S552.28,525.85,581.89,579.6z"/>
+	</g>
+</g>
+</svg>

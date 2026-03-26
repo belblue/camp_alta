@@ -1,0 +1,45 @@
+# robots.txt for Camp Alta Kiruna
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# AI Search Crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Important pages for crawling
+Allow: /cabins/
+Allow: /cabins-lakeside/
+Allow: /tours/
+Allow: /booking/
+Allow: /theCamp/
+
+# Block unnecessary admin/system paths
+Disallow: /admin/
+Disallow: /_nuxt/
+Disallow: /api/
+Disallow: /.well-known/
+
+# Allow search engines to access images for better image SEO
+Allow: /cabins/*.webp
+Allow: /tours/*.webp
+Allow: /index/*.webp
+Allow: /camp/*.webp
+
+# Sitemap location
+Sitemap: https://campalta.net/sitemap.xml

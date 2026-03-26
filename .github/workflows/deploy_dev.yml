@@ -1,0 +1,105 @@
+name: Deploy Develop
+
+on:
+  push:
+    branches: [develop]
+
+env:
+  REGISTRY: registry.silatek.net
+  PROJECT: webs_hoteles
+  FRONTEND_IMAGE: campalta_frontend_dev
+  BACKEND_IMAGE: campalta_backend_dev
+  APP_PORT_FRONTEND: "3000"
+  APP_PORT_BACKEND: "8000"
+
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, linux, proxmox]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build frontend
+        run: |
+          IMAGE=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.FRONTEND_IMAGE }}
+          docker build \
+            -t ${IMAGE}:latest \
+            -t ${IMAGE}:${{ github.sha }} \
+            ./frontend
+
+      - name: Build backend
+        run: |
+          IMAGE=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.BACKEND_IMAGE }}
+          docker build \
+            -t ${IMAGE}:latest \
+            -t ${IMAGE}:${{ github.sha }} \
+            ./backend
+
+      - name: Verificar frontend
+        run: |
+          IMAGE=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.FRONTEND_IMAGE }}
+          CONTAINER="test-frontend-${GITHUB_SHA::8}"
+          docker run -d --name ${CONTAINER} \
+            -p 0:${{ env.APP_PORT_FRONTEND }} \
+            ${IMAGE}:latest
+          sleep 5
+          PORT=$(docker port ${CONTAINER} ${{ env.APP_PORT_FRONTEND }} | cut -d: -f2)
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:${PORT})
+          docker rm -f ${CONTAINER}
+          if [ "$STATUS" != "200" ]; then
+            echo "ERROR: HTTP $STATUS"
+            exit 1
+          fi
+          echo "OK: HTTP $STATUS"
+
+      - name: Verificar backend
+        run: |
+          IMAGE=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.BACKEND_IMAGE }}
+          CONTAINER="test-backend-${GITHUB_SHA::8}"
+          docker run -d --name ${CONTAINER} \
+            -p 0:${{ env.APP_PORT_BACKEND }} \
+            ${IMAGE}:latest
+          sleep 5
+          PORT=$(docker port ${CONTAINER} ${{ env.APP_PORT_BACKEND }} | cut -d: -f2)
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:${PORT}/docs)
+          docker rm -f ${CONTAINER}
+          if [ "$STATUS" != "200" ]; then
+            echo "ERROR: HTTP $STATUS"
+            exit 1
+          fi
+          echo "OK: HTTP $STATUS"
+
+      - name: Push frontend a Harbor
+        run: |
+          IMAGE=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.FRONTEND_IMAGE }}
+          docker push ${IMAGE}:latest
+          docker push ${IMAGE}:${{ github.sha }}
+
+      - name: Push backend a Harbor
+        run: |
+          IMAGE=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.BACKEND_IMAGE }}
+          docker push ${IMAGE}:latest
+          docker push ${IMAGE}:${{ github.sha }}
+
+      - name: Sync compose a VM
+        env:
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        run: |
+          USER=$(echo "$DEPLOY_USER" | tr -d '[:space:]')
+          HOST=$(echo "$DEPLOY_HOST" | tr -d '[:space:]')
+          scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ./docker-compose.dev-deploy.yml "${USER}@${HOST}:~/apps/campalta_dev/"
+
+      - name: Deploy via SSH
+        env:
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        run: |
+          USER=$(echo "$DEPLOY_USER" | tr -d '[:space:]')
+          HOST=$(echo "$DEPLOY_HOST" | tr -d '[:space:]')
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "${USER}@${HOST}" "cd ~/apps/campalta_dev && docker compose -f docker-compose.dev-deploy.yml pull && docker compose -f docker-compose.dev-deploy.yml up -d --remove-orphans && docker image prune -f"
+
+      - name: Limpiar runner
+        if: always()
+        run: docker image prune -f

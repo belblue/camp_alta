@@ -1,0 +1,15 @@
+node_modules
+.output
+.nuxt
+.nitro
+.cache
+dist
+.git
+.env
+.env.*
+.DS_Store
+.vscode
+.claude
+*.md
+docker-compose*.yml
+Dockerfile*

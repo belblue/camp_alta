@@ -1,0 +1,23 @@
+.env
+.env.*
+.DS_Store
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Nuxt
+.nuxt/
+.output/
+.nitro/
+.cache/
+
+# IDE
+.vscode/
+
+# Docs
+*.pdf

@@ -1,0 +1,16 @@
+services:
+  campalta_frontend_dev:
+    image: ${REGISTRY}/${PROJECT}/campalta_frontend_dev:latest
+    container_name: campalta_frontend_dev
+    restart: unless-stopped
+    ports:
+      - "${DEPLOY_PORT_FRONTEND}:3000"
+    env_file: .env
+
+  campalta_backend_dev:
+    image: ${REGISTRY}/${PROJECT}/campalta_backend_dev:latest
+    container_name: campalta_backend_dev
+    restart: unless-stopped
+    ports:
+      - "${DEPLOY_PORT_BACKEND}:8000"
+    env_file: .env

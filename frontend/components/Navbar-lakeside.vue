@@ -1,7 +1,7 @@
 <template>
   <div class="nav fixed top-0 z-2000 w-full" :class="headerClass">
     <div class="py-2 px-4 flex mt-1 mx-2 flex-row" :class="bgClass">
-      <!-- data-aos="fade" data-aos-delay="750" class="bg-white top-0 w-full z-10 shadow-md py-1 px-4 absolute flex flex-row items-center justify-between "-->
+      <!-- daaata-aos="fade" data-aos-delay="750" class="bg-white top-0 w-full z-10 shadow-md py-1 px-4 absolute flex flex-row items-center justify-between "-->
       <NuxtLink
         to="/"
         class="bg-white top-2 left-2 p-2 absolute lg:block hidden"
@@ -229,7 +229,7 @@ async function navScroll() {
 
 async function translateWeatherCode() {
   const response: Weather = await $fetch(
-    "https://api.open-meteo.com/v1/forecast?latitude=67.86&longitude=20.23&daily=weathercode,temperature_2m_max,temperature_2m_min&forecast_days=1&timezone=Europe%2FBerlin"
+    "https://api.open-meteo.com/v1/forecast?latitude=67.86&longitude=20.23&daily=weathercode,temperature_2m_max,temperature_2m_min&forecast_days=1&timezone=Europe%2FBerlin",
   );
   weather.value = response.daily;
 }

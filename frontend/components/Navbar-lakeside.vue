@@ -7,14 +7,14 @@
         class="bg-white top-2 left-2 p-2 absolute lg:block hidden"
         title="back to mainpage"
       >
-        <img src="/campalta.png" alt="logo campalta" class="w-28" />
+        <img src="/campalta.webp" alt="logo campalta" class="w-28" />
       </NuxtLink>
       <NuxtLink
         to="/"
         class="block lg:hidden bg-white top-2 left-2 p-2 absolute"
         title="back to mainpage"
       >
-        <img src="/campalta.png" alt="logo camp alta" class="w-20" />
+        <img src="/campalta.webp" alt="logo camp alta" class="w-20" />
       </NuxtLink>
       <div class="hidden md:flex lg:hidden w-24 text-white">.</div>
       <div class="ml-28 pt-1 mr-auto hidden lg:block">

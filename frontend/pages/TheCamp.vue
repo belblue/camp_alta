@@ -114,7 +114,6 @@
                     </div>
                    <div class="inspired lg:flex md:flex hidden justify-center relative h-[70vh] overflow-hidden">
                         <div class="absolute inset-0 bg-[url('public/camp/general/general_10.webp')] bg-cover bg-center scale-110"></div>
-                        <!--<img class="object-fit lg:w-screen lg:h-screen" src="/cabin-land.jpeg" alt="Image">-->
                         <div class="absolute top-1/3 text-center text-white z-10">
                             <h1 class="text-white lg:text-9xl block text-8xl uppercase">Be inspired</h1>
                             <button class="mt-4 opacity-0 md:hidden  button-swiper">

@@ -197,20 +197,6 @@
         >
       </div>
     </div>
-    <!--<div class="bg-bg2 px-2 lg:px-10 pb-10 lg:pb-20">               
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 justify-center">
-                    <div class="lg:mr-10">
-                        <p class="title-pages text-center">Camping</p>
-                        <div class="flex justify-center pb-8">                        
-                            <p class="line w-1/2 lg:w-1/4"></p>                        
-                        </div>
-                        <p class="text-xl mt-4 text-left"> Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Praesent nibh magna, pulvin ubia nostra, per inceptos himenaeos. Nullam auctor convallis justo non laoreet. Praesent nibh magna, pulvin</p>
-                    </div>                     
-                    <div class="mt-4 flex  justify-center ">
-                        <img src="/cabin-land.jpeg" alt="" class="">
-                    </div>
-                </div> 
-            </div> -->
     <div
       class="bg-bg1 px-2 lg:px-10 pb-10 lg:pb-20 text-center"
       id="tripadvisor"

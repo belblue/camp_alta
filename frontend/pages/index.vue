@@ -96,13 +96,33 @@
           <!-- Booking pills -->
           <div class="flex flex-col items-center gap-2 lg:gap-3 pb-8 px-4">
             <div class="flex flex-wrap justify-center gap-2 lg:gap-3">
-              <NuxtLink to="/booking/Booking-cabins" class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition">Camp Alta Cabins</NuxtLink>
-              <NuxtLink to="/Booking-lakeside" class="bg-tertiary text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:opacity-90 transition">Lakeside Cabins</NuxtLink>
+              <NuxtLink
+                to="/booking/Booking-cabins"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
+                >Camp Alta Cabins</NuxtLink
+              >
+              <NuxtLink
+                to="/Booking-lakeside"
+                class="bg-tertiary text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:opacity-90 transition"
+                >Lakeside Cabins</NuxtLink
+              >
             </div>
             <div class="flex flex-wrap justify-center gap-2 lg:gap-3">
-              <NuxtLink to="/booking/Booking-tours" class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition">Tours</NuxtLink>
-              <NuxtLink to="/booking/Booking-services" class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition">Services</NuxtLink>
-              <NuxtLink to="/booking/Booking-caravans" class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition">Caravans</NuxtLink>
+              <NuxtLink
+                to="/booking/Booking-tours"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
+                >Tours</NuxtLink
+              >
+              <NuxtLink
+                to="/booking/Booking-services"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
+                >Services</NuxtLink
+              >
+              <NuxtLink
+                to="/booking/Booking-caravans"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
+                >Caravans</NuxtLink
+              >
             </div>
           </div>
         </div>
@@ -1102,7 +1122,7 @@
                     <video class="h-screen w-screen  object-cover" autoplay >
                         <source src="banner.mp4" type="video/mp4">
                     </video>
-                </div>-->
+                </div>---->
 
       <!-- Guest Reviews Section -->
       <div class="lg:px-10 pb-10 lg:pb-20 min-h-[70vh] relative" id="Reviews">
@@ -1117,7 +1137,8 @@
           <p
             class="title text-white lg:text-9xl text-center"
             style="
-              text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7),
+              text-shadow:
+                2px 2px 8px rgba(0, 0, 0, 0.7),
                 0 0 20px rgba(0, 0, 0, 0.5);
             "
           >
@@ -1676,10 +1697,11 @@
 </template>
 <script lang="ts" setup>
 useSeo({
-  title: 'Camp Alta Kiruna - Arctic Wilderness Camp in Swedish Lapland',
-  description: 'Discover the beauty of Lapland from our cozy, affordable cabins. Dive into real winter adventure with our snowmobile, dogsled, and Northern Lights tours in Kiruna, Sweden.',
-  path: '/',
-})
+  title: "Camp Alta Kiruna - Arctic Wilderness Camp in Swedish Lapland",
+  description:
+    "Discover the beauty of Lapland from our cozy, affordable cabins. Dive into real winter adventure with our snowmobile, dogsled, and Northern Lights tours in Kiruna, Sweden.",
+  path: "/",
+});
 
 import { onMounted, onUnmounted, computed } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";

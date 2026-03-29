@@ -58,12 +58,12 @@
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">With electricity</p>
-              <p class="text-xl">390 SEK</p>
+              <p class="text-xl">390 SEK (max 4 people)</p>
               <p class="text-xl">50 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Without electricity</p>
-              <p class="text-xl">350 SEK</p>
+              <p class="text-xl">350 SEK (max 4 people)</p>
               <p class="text-xl">50 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">

@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     appManifest: false, // Disable to prevent builds/meta/*.json 404 errors on cache mismatch
   },
   runtimeConfig: {
+    apiBackendUrl: process.env.NUXT_API_BACKEND_URL || 'http://localhost:8000',
     public: {
       cacheVersion: "2026010901", // Update this when you need to bust cache
     },

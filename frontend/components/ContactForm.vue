@@ -107,12 +107,7 @@
                 message: form.value.message,
                 recaptchaToken: recaptchaToken
             }
-            const response = await axios.post('https://api.campalta.net/submit_form/', qs.stringify(formData),
-            {
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
-            })
+            const response = await axios.post('/api/contact', formData)
             if (response.data.result === 'error') {
                 contactForm.value = 'error';
             } else {

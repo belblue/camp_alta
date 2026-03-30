@@ -1,0 +1,29 @@
+services:
+  frontend:
+    image: ${REGISTRY}/${PROJECT}/${APP_NAME}_frontend${ENV_SUFFIX}:latest
+    container_name: ${APP_NAME}${ENV_SUFFIX}_frontend
+    restart: unless-stopped
+    ports:
+      - "${DEPLOY_PORT}:3000"
+    environment:
+      - NODE_ENV=production
+      - NUXT_API_BACKEND_URL=http://backend:8000
+    env_file: .env
+    networks:
+      - app-network
+    depends_on:
+      - backend
+
+  backend:
+    image: ${REGISTRY}/${PROJECT}/${APP_NAME}_backend${ENV_SUFFIX}:latest
+    container_name: ${APP_NAME}${ENV_SUFFIX}_backend
+    restart: unless-stopped
+    expose:
+      - "8000"
+    env_file: .env
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

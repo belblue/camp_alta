@@ -1122,7 +1122,7 @@
                     <video class="h-screen w-screen  object-cover" autoplay >
                         <source src="banner.mp4" type="video/mp4">
                     </video>
-                </div>---->
+                </div>-->
 
       <!-- Guest Reviews Section -->
       <div class="lg:px-10 pb-10 lg:pb-20 min-h-[70vh] relative" id="Reviews">

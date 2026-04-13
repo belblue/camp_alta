@@ -26,6 +26,9 @@
         </NuxtLink>
         <div class="px-4 lg:px-10 pb-10">
             <ClientOnly>
+                <div v-if="loading" class="flex justify-center items-center py-20">
+                    <div class="animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-primary"></div>
+                </div>
                 <div ref="widgetContainer"></div>
             </ClientOnly>
         </div>
@@ -42,16 +45,19 @@ useSeo({
 </script>
 <script lang="ts">
 export default {
+  data() {
+    return { loading: true };
+  },
   mounted() {
     this.$nextTick(() => {
-      // Create the script element with the exact attributes
       const script = document.createElement('script');
       script.src = 'https://secured.sirvoy.com/widget/sirvoy.js';
       script.async = true;
       script.setAttribute('data-form-id', '80bf61cb7ac6ed2e');
+      script.onload = () => {
+        setTimeout(() => { this.loading = false; }, 500);
+      };
 
-      // Insert the script directly into the widget container
-      // This mimics the behavior of having the script tag inline in HTML
       if (this.$refs.widgetContainer) {
         this.$refs.widgetContainer.appendChild(script);
       }

@@ -1714,25 +1714,18 @@ import "swiper/css/pagination";
 const sending = ref(false);
 
 // Computed property to determine hero image based on current date
+// Summer (April 1 - September 14): index_1.webp
+// Winter (September 15 - March 31): index_2.webp
 const heroImageSrc = computed(() => {
   const today = new Date();
-  const month = today.getMonth() + 1; // getMonth() returns 0-11, so add 1
+  const month = today.getMonth() + 1;
   const day = today.getDate();
 
-  // September 15 (month 9, day 15) - use index_2.webp
-  if (month === 9 && day === 15) {
-    console.log("September 15th - using index_2.webp");
-    return "/index/index_2.webp";
-  }
+  const isSummer =
+    (month >= 4 && month <= 8) ||
+    (month === 9 && day < 15);
 
-  // April 1 (month 4, day 1) - use index_1.webp
-  if (month === 4 && day === 1) {
-    console.log("April 1st - using index_1.webp");
-    return "/index/index_1.webp";
-  }
-
-  // Default fallback - use index_2.webp
-  return "/index/index_2.webp";
+  return isSummer ? "/index/index_1.webp" : "/index/index_2.webp";
 });
 
 let ticking = false;

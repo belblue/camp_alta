@@ -1,0 +1,85 @@
+name: Deploy Production
+
+on:
+  push:
+    branches: [main]
+
+env:
+  REGISTRY: registry.silatek.net
+  PROJECT: webs_hoteles
+  APP_NAME: campalta
+  ENV_SUFFIX: _prod
+
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, linux, proxmox]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build imagen frontend
+        run: |
+          FRONT=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.APP_NAME }}_frontend${{ env.ENV_SUFFIX }}
+          docker build \
+            -f frontend/Dockerfile \
+            -t ${FRONT}:latest \
+            -t ${FRONT}:${{ github.sha }} \
+            frontend/
+
+      - name: Build imagen backend
+        run: |
+          BACK=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.APP_NAME }}_backend${{ env.ENV_SUFFIX }}
+          docker build \
+            -f backend/Dockerfile \
+            -t ${BACK}:latest \
+            -t ${BACK}:${{ github.sha }} \
+            backend/
+
+      - name: Verificar frontend
+        run: |
+          FRONT=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.APP_NAME }}_frontend${{ env.ENV_SUFFIX }}
+          CONTAINER="test-front-${GITHUB_SHA::8}"
+          docker run -d --name ${CONTAINER} \
+            -p 0:3000 \
+            ${FRONT}:latest
+          sleep 5
+          PORT=$(docker port ${CONTAINER} 3000 | cut -d: -f2)
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:${PORT})
+          docker rm -f ${CONTAINER}
+          if [ "$STATUS" != "200" ]; then
+            echo "ERROR: HTTP $STATUS"
+            exit 1
+          fi
+          echo "OK: HTTP $STATUS"
+
+      - name: Push a Harbor
+        run: |
+          FRONT=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.APP_NAME }}_frontend${{ env.ENV_SUFFIX }}
+          BACK=${{ env.REGISTRY }}/${{ env.PROJECT }}/${{ env.APP_NAME }}_backend${{ env.ENV_SUFFIX }}
+          docker push ${FRONT}:latest
+          docker push ${FRONT}:${{ github.sha }}
+          docker push ${BACK}:latest
+          docker push ${BACK}:${{ github.sha }}
+
+      - name: Sync compose a VM
+        env:
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        run: |
+          USER=$(echo "$DEPLOY_USER" | tr -d '[:space:]')
+          HOST=$(echo "$DEPLOY_HOST" | tr -d '[:space:]')
+          scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ./docker-compose.deploy.yml "${USER}@${HOST}:~/apps/${{ env.APP_NAME }}${{ env.ENV_SUFFIX }}/"
+
+      - name: Deploy via SSH
+        env:
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        run: |
+          USER=$(echo "$DEPLOY_USER" | tr -d '[:space:]')
+          HOST=$(echo "$DEPLOY_HOST" | tr -d '[:space:]')
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "${USER}@${HOST}" "cd ~/apps/${{ env.APP_NAME }}${{ env.ENV_SUFFIX }} && docker compose -f docker-compose.deploy.yml pull && docker compose -f docker-compose.deploy.yml up -d --remove-orphans && docker image prune -f"
+
+      - name: Limpiar runner
+        if: always()
+        run: docker image prune -f

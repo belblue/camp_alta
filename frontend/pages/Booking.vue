@@ -59,7 +59,7 @@
     </section>
 </template>
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 useSeo({
   title: 'Book Your Stay - Cabins & Tours | Camp Alta Kiruna',
@@ -77,6 +77,7 @@ let observer: MutationObserver | undefined
 declare const DROPLET: any
 
 onMounted(() => {
+  nextTick(() => {
   const container = widgetContainer.value
   if (!container) return
 
@@ -104,18 +105,8 @@ onMounted(() => {
   }
 
   const checkContent = () => {
-    const iframe = container.querySelector('iframe') as HTMLIFrameElement | null
-    if (iframe) {
-      if (iframe.contentDocument?.readyState === 'complete') {
-        finish()
-      } else {
-        iframe.addEventListener('load', finish, { once: true })
-        observer?.disconnect()
-      }
-      return true
-    }
     const hasContent = Array.from(container.children).some(
-      (el) => el.id !== 'CHECKFRONT_LOADER'
+      (el) => el.id !== 'CHECKFRONT_LOADER' && el.tagName !== 'SCRIPT'
     )
     if (hasContent) {
       finish()
@@ -151,6 +142,7 @@ onMounted(() => {
     }
   }
   document.head.appendChild(script)
+  })
 })
 
 onBeforeUnmount(() => {

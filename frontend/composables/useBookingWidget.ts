@@ -53,16 +53,6 @@ export function useBookingWidget(opts: WidgetOptions) {
       }
 
       const checkContent = () => {
-        const iframe = container.querySelector('iframe') as HTMLIFrameElement | null
-        if (iframe) {
-          if (iframe.contentDocument?.readyState === 'complete') {
-            finish()
-          } else {
-            iframe.addEventListener('load', finish, { once: true })
-            observer?.disconnect()
-          }
-          return true
-        }
         const hasContent = Array.from(container.children).some(
           (el) => el.id !== 'CHECKFRONT_LOADER' && el.tagName !== 'SCRIPT'
         )

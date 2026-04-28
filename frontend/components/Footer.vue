@@ -70,10 +70,10 @@
     <div>
       <div class="m-2 text-center">
         <!--<a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>-->
-        <NuxtLink class="hover:text-primary" href="https://belblue.vercel.app/">
-          Design by BelBLue</NuxtLink
+        <NuxtLink class="hover:text-primary" href="https://belblue.vercel.app/" target="_blank" rel="noopener noreferrer">
+          Design by Belblue</NuxtLink
         >
-        <p>© Alta resorts AB 2023 - All rights reserved</p>
+        <p>© Alta resorts AB 2026 - All rights reserved</p>
       </div>
     </div>
   </div>

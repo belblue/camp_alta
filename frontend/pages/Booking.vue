@@ -22,7 +22,14 @@
       <div class="bg-bg2 px-2 lg:px-10 pb-10 lg:pb-20 text-center">
         <p class="pt-4 font-bold text-xl">Select the date range for which you want to obtain availability.</p>
         <ClientOnly>
-          <div id="CHECKFRONT_WIDGET_01"><p id="CHECKFRONT_LOADER" style="background: url('//camp-alta.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p></div>
+          <div v-if="loading" class="flex justify-center items-center py-20">
+            <div class="animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-primary"></div>
+          </div>
+          <div v-if="error" class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-lg p-6 my-10 text-center">
+            <p class="text-xl font-bold mb-2">Booking system temporarily unavailable</p>
+            <p class="text-gray-700">Sorry, it looks like there is a problem with our booking provider. You can contact us at <a href="mailto:info@campalta.se" class="text-primary font-bold underline">info@campalta.se</a> with your booking request. Sorry for the inconvenience.</p>
+          </div>
+          <div id="CHECKFRONT_WIDGET_01" ref="widgetContainer"></div>
         </ClientOnly>
       </div>
 
@@ -52,32 +59,102 @@
     </section>
 </template>
 <script lang="ts" setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
 useSeo({
   title: 'Book Your Stay - Cabins & Tours | Camp Alta Kiruna',
   description: 'Book your stay at Camp Alta Kiruna. Browse availability for cabins, tours, caravan spots, and extra services in the heart of Swedish Lapland.',
   path: '/Booking',
+  image: '/header/header_aboutcamp.webp',
 })
-</script>
-<script lang="ts">
-export default {
-  methods: {
-    initializeWidget() {
+
+const loading = ref(true)
+const error = ref(false)
+const widgetContainer = ref<HTMLElement | null>(null)
+let fallbackTimer: number | undefined
+let observer: MutationObserver | undefined
+
+declare const DROPLET: any
+
+onMounted(() => {
+  const container = widgetContainer.value
+  if (!container) return
+
+  const trackClarity = (event: string) => {
+    const w = window as any
+    if (typeof w.clarity === 'function') {
+      w.clarity('event', event)
+      w.clarity('set', 'last_booking_event', event)
+    }
+  }
+
+  const finish = () => {
+    loading.value = false
+    observer?.disconnect()
+    if (fallbackTimer) clearTimeout(fallbackTimer)
+    trackClarity('booking_widget_loaded_main')
+  }
+
+  const fail = () => {
+    loading.value = false
+    error.value = true
+    observer?.disconnect()
+    if (fallbackTimer) clearTimeout(fallbackTimer)
+    trackClarity('booking_widget_failed_main')
+  }
+
+  const checkContent = () => {
+    const iframe = container.querySelector('iframe') as HTMLIFrameElement | null
+    if (iframe) {
+      if (iframe.contentDocument?.readyState === 'complete') {
+        finish()
+      } else {
+        iframe.addEventListener('load', finish, { once: true })
+        observer?.disconnect()
+      }
+      return true
+    }
+    const hasContent = Array.from(container.children).some(
+      (el) => el.id !== 'CHECKFRONT_LOADER'
+    )
+    if (hasContent) {
+      finish()
+      return true
+    }
+    return false
+  }
+
+  observer = new MutationObserver(() => { checkContent() })
+  observer.observe(container, { childList: true, subtree: true })
+
+  fallbackTimer = window.setTimeout(() => {
+    if (!checkContent()) fail()
+  }, 15000)
+
+  const script = document.createElement('script')
+  script.src = '//camp-alta.checkfront.com/lib/interface--0.js'
+  script.type = 'text/javascript'
+  script.async = true
+  script.onerror = fail
+  script.onload = () => {
+    try {
       new DROPLET.Widget({
         host: 'camp-alta.checkfront.com',
         target: 'CHECKFRONT_WIDGET_01',
         options: 'category_select',
         category_id: '2,3,7,6,4,9',
         provider: 'droplet',
-      }).render();
-    },
-  },
-  mounted() {
-    const script = document.createElement('script');
-    script.src = '//camp-alta.checkfront.com/lib/interface--0.js';
-    script.type = 'text/javascript';
-    script.async = true;
-    script.onload = this.initializeWidget;
-    document.head.appendChild(script);
-  },
-};
+      }).render()
+      requestAnimationFrame(() => { checkContent() })
+    } catch (e) {
+      fail()
+    }
+  }
+  document.head.appendChild(script)
+})
+
+onBeforeUnmount(() => {
+  if (fallbackTimer) clearTimeout(fallbackTimer)
+  observer?.disconnect()
+})
 </script>

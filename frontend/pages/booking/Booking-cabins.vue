@@ -41,18 +41,14 @@
         >
       </p>
       <ClientOnly>
-      <div id="CHECKFRONT_WIDGET_01">
-        <p
-          id="CHECKFRONT_LOADER"
-          style="
-            background: url(&quot;//camp-alta.checkfront.com/images/loader.gif&quot;)
-              left center no-repeat;
-            padding: 5px 5px 5px 20px;
-          "
-        >
-          Searching Availability...
-        </p>
-      </div>
+        <div v-if="loading" class="flex justify-center items-center py-20">
+          <div class="animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-primary"></div>
+        </div>
+        <div v-if="error" class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-lg p-6 my-10 text-center">
+          <p class="text-xl font-bold mb-2">Booking system temporarily unavailable</p>
+          <p class="text-gray-700">Sorry, it looks like there is a problem with our booking provider. You can contact us at <a href="mailto:info@campalta.se" class="text-primary font-bold underline">info@campalta.se</a> with your booking request. Sorry for the inconvenience.</p>
+        </div>
+        <div id="CHECKFRONT_WIDGET_01" ref="widgetContainer"></div>
       </ClientOnly>
     </div>
 
@@ -89,35 +85,18 @@ const cabinName = computed(() => {
   const name = route.query.cabin as string | undefined;
   return name || "";
 });
-</script>
-<script lang="ts">
-export default {
-  methods: {
-    initializeWidget() {
-      const widgetOptions: Record<string, string> = {
-        host: "camp-alta.checkfront.com",
-        target: "CHECKFRONT_WIDGET_01",
-        category_id: "2",
-        options: "category_select",
-        provider: "droplet",
-      };
 
-      // If an item_id is provided via query param, pre-select that item
-      const itemId = new URLSearchParams(window.location.search).get("item_id");
-      if (itemId) {
-        widgetOptions.item_id = itemId;
-      }
-
-      new DROPLET.Widget(widgetOptions).render();
-    },
-  },
-  mounted() {
-    const script = document.createElement("script");
-    script.src = "//camp-alta.checkfront.com/lib/interface--0.js";
-    script.type = "text/javascript";
-    script.async = true;
-    script.onload = this.initializeWidget;
-    document.head.appendChild(script);
-  },
+const widgetOptions: Record<string, string> = {
+  category_id: "2",
+  options: "category_select",
+  provider: "droplet",
 };
+const itemId = route.query.item_id as string | undefined;
+if (itemId) widgetOptions.item_id = itemId;
+
+const { loading, error, widgetContainer } = useBookingWidget({
+  provider: "checkfront",
+  trackingTag: "booking_cabins",
+  widgetOptions,
+});
 </script>

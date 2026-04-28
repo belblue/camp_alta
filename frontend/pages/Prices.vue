@@ -411,6 +411,7 @@ useSeo({
   description:
     "View prices for cabins and Arctic tours at Camp Alta Kiruna. Affordable wilderness accommodation and adventure tours in Swedish Lapland.",
   path: "/Prices",
+  image: "/header/header_prices.webp",
 });
 
 import { onMounted, onUnmounted } from "vue";

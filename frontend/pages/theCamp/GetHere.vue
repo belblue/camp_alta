@@ -160,6 +160,7 @@ useSeo({
   title: 'How to Get to Camp Alta - Directions & Transport | Camp Alta Kiruna',
   description: 'Find out how to reach Camp Alta Kiruna by flight, train, or car. Located 15 km from Kiruna on the E10 road, with shuttle service available from the airport and train station.',
   path: '/theCamp/GetHere',
+  image: '/camp/travel_1.webp',
 })
 
 import { onMounted, onUnmounted } from 'vue';

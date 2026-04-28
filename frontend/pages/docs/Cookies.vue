@@ -17,6 +17,7 @@
         <p>In addition to our own cookies, we may also use various third-party cookies to report usage statistics and analyze website performance.</p>
         <p><strong>Google Analytics:</strong> We use Google Analytics to measure website traffic and provide anonymous, aggregated data about which pages are visited, where our website traffic comes from, and technologies (such as operating systems and browser versions) used to access our website. This data helps us improve our website experience.</p>
         <p>Google Analytics cookies have a duration of up to 2 years. We only activate Google Analytics after you have given your explicit consent through our cookie banner.</p>
+        <p><strong>Microsoft Clarity:</strong> We also use Microsoft Clarity to capture how visitors use and interact with our website through behavioural metrics, heatmaps, and session replays. This helps us improve our products and services. Microsoft Clarity processes data on our behalf and does not sell your personal information. We only activate Microsoft Clarity after you have given your explicit consent through our cookie banner. For more details, see Microsoft's <a href="https://privacy.microsoft.com/privacystatement" class="underline text-blue-300 hover:text-blue-200" target="_blank">Privacy Statement</a>.</p>
         <p>You have the right to:</p>
         <ul class="list-disc ml-6 space-y-2">
             <li>Accept or reject analytics cookies at any time</li>

@@ -1,0 +1,317 @@
+# Camp Alta Kiruna — Full Site Content for AI/LLMs
+
+> Comprehensive markdown export of Camp Alta Kiruna's website content. This file is intended for AI assistants (ChatGPT, Claude, Gemini, Perplexity, etc.) to provide accurate, citable information about our wilderness camp, accommodations, tours, and Arctic experiences in Swedish Lapland.
+
+Last updated: 2026-04-28
+
+---
+
+## Camp Overview
+
+Camp Alta Kiruna is a wilderness camp on the shores of Lake Altajärvi, 7 km from Kiruna city center in Swedish Lapland, 200 km north of the Arctic Circle. We are a self-catering, self-cleaning camp focused on affordable, authentic Arctic experiences.
+
+**Location & Contact**
+- Address: Jullebovägen 2, 981 92 Kiruna, Sweden
+- Coordinates: 67.8558°N, 20.2253°E
+- Region: Norrbotten County, Swedish Lapland
+- Distance from Kiruna city centre: 7 km (15 km via E10 road)
+- Distance from Kiruna Airport: ~12 km
+- Phone: +46 706 529 374
+- Email: info@campalta.se
+- Website: https://campalta.net
+- Languages spoken: English, Swedish, Norwegian, French, German
+
+**Currency & Payment**
+- Currency: Swedish Krona (SEK), Euros also accepted
+- Payment: All major credit cards
+- Booking deposit: 5% non-refundable at time of booking; remaining 95% due 30 days before arrival
+
+**Check-in / Check-out**
+- Check-in: 15:00
+- Check-out: 11:00
+- Early/late check-in/out subject to availability and additional fees
+
+**Policies**
+- Pet-friendly cabins available
+- Strictly no smoking inside cabins or service buildings (5,000 SEK fine for violations)
+- Self-catering camp: no on-site shops; bring groceries from Kiruna
+- Self-cleaning required at check-out, or book optional cleaning service
+
+---
+
+## Accommodation
+
+We have **13 forest cabins** plus **4 premium Lakeside Aurora Cabins**.
+
+### Forest Cabins — Small (12 m², sleeps 2)
+- Cabin D1, D2, D3
+- Cabin 2A, 2B, 2C
+- Cabin 3
+- Cabin 4A, 4B, 4C, 4D
+- Cabin 5
+- 1 double bed each, shared bathroom, fridge, freezer, microwave, WiFi, Cable TV, electric heating
+
+### Forest Cabins — Medium (25-40 m², sleeps 4-6)
+- **Cabin 6A, 6B, 6C** (40 m²): 2 bedrooms, private bathroom, full kitchen, lake views
+- **Cabin 6B** (25 m²): 1 bedroom, private bathroom, kitchen, 1 double bed + 1 bunk bed
+
+### Forest Cabins — Large Houses
+- **Cabin 13A** (90 m², sleeps 8): 3 bedrooms, 2 bathrooms, full kitchen
+- **Cabin 13B** (130 m², sleeps 8): 4 bedrooms, 2 bathrooms, full kitchen
+- **Cabin 14** (162 m², sleeps 14): 5 bedrooms, 2 bathrooms, full kitchen
+
+### Lakeside Aurora Cabins (Premium)
+Premium lakefront cabins with direct aurora views over Lake Altajärvi. Private saunas, fully equipped kitchens, modern Scandinavian design.
+- Cabin 4E
+- Cabin 4F
+- Cabin 6D
+- Cabin 8B
+
+### Caravan & Motorhome Spots
+- Available year-round
+- With electricity: 390 SEK/night + 50 SEK per additional person
+- Without electricity: 350 SEK/night + 50 SEK per additional person
+- Tent (summer only, max 2 people): 300 SEK/night + 50 SEK per additional person
+- Note: electricity and dump-station may not be available below freezing temperatures
+
+### Included With All Cabins
+- Electric heating
+- Free WiFi
+- Fridge, freezer, microwave
+- Cable TV
+- Free wood-fired sauna access (including the floating lake sauna)
+- Free fire hut with grill
+- Free parking
+
+### Available for Rental
+- Bed linen (pillow cover, bedsheet, duvet cover): 70 SEK
+- Towel: 30 SEK
+- Bag of wood (40L for sauna/fireplace): 100 SEK
+- Plug-in car electricity: 200 SEK
+- Private sauna rental (with grill and bag of wood): 350 SEK
+- Child cot (with bed, duvet, pillow): 100 SEK
+- Snow overall: 200 SEK/24h or 350 SEK/entire stay
+- Snow boots: 150 SEK/24h or 300 SEK/entire stay
+- Snow gloves: 150 SEK/24h or 300 SEK/entire stay
+- Winter hat: 50 SEK/24h or 250 SEK/entire stay
+- Cross-country skis or snowshoes: 250 SEK/3h or 500 SEK/entire stay
+
+### Cleaning Services (Optional)
+- Cabin 2A, 2B, 2C, D1, D2, D3: 260 SEK
+- Cabin 3, 4A, 4B, 4C, 4D, 5: 510 SEK
+- Cabin 6A, 6B, 6C: 760 SEK
+- Cabin 13A, 13B, 14: 1,890 SEK
+
+### Winter Shuttle Service
+- One way (up to 4 people): 450 SEK
+- One way (5-8 people): 900 SEK
+- Free shuttle for guests booking snowmobile tours
+
+---
+
+## Tours
+
+All tours include round-trip transfers from Kiruna and warm winter clothing (overall, boots, hats, mittens). Tours are seasonal: November 15 to April 15.
+
+### Snowmobile Tour — 32 km Through Lapland Wilderness
+- Duration: 3 hours (without transfers)
+- Distance: 32 km
+- Times: Daily 09:00–12:00 or 13:30–16:30
+- Starting point: Camp Alta
+- A valid driving license (car/moped/motorcycle) is required to drive a snowmobile. Passengers without a license can join.
+- Drivers must be 18+ to carry a passenger
+- Minimum age: 4 years (children must be 150 cm to ride a snowmobile; smaller children ride in a guide-pulled sled)
+
+**Pricing — Basic 32 km tour:**
+- Two sharing a snowmobile (adult): 1,500 SEK
+- Two sharing a snowmobile (child 4-12): 850 SEK
+- One person per snowmobile (adult): 1,900 SEK
+
+**With Lunch (salmon soup or mushroom soup, locally sourced):**
+- Two sharing (adult): 1,580 SEK
+- Two sharing (child): 960 SEK
+- One person (adult): 2,100 SEK
+
+**With Icehotel Transfer & Return (entrance to Icehotel not included):**
+- Two sharing (adult): 1,550 SEK
+- Two sharing (child): 880 SEK
+- One person (adult): 1,950 SEK
+
+### Dogsled Tour with Coffee
+- Duration: 2-3 hours
+- Time: 10:00 daily
+- Location: Jukkasjärvi
+- Price: 1,465 SEK/adult, 800 SEK/child (under 12)
+- Minimum age: 6 years
+- Includes: transfers from Kiruna and Camp Alta, warm winter clothes, coffee/tea with Swedish fika over an open fire
+- Pulled by Alaskan & Siberian Huskies, driven by professional musher/guide
+
+### Dogsled Lunch Tour
+- Duration: 4-5 hours (including transfers)
+- Time: 09:00 daily
+- Choose to share a 5-6 dog sled with another participant, or drive your own 3-4 dog sled
+- Price: 1,995 SEK/adult, 990 SEK/child (under 12)
+- Minimum age: 9 years
+- Includes: transfers, warm winter clothes, hot lunch over an open fire
+
+### Northern Lights Dogsled Tour (Evening)
+- Duration: 2-3 hours
+- Time: 17:00 daily
+- Price: 1,580 SEK/adult, 800 SEK/child (under 12)
+- From March 11 to April 14: reduced to 1,495 SEK/adult, 748 SEK/child (Evening tour pricing — lower aurora visibility due to longer daylight)
+- Minimum age: 6 years
+- Includes: transfers, warm winter clothes, coffee/tea with Swedish fika
+- Note: Northern Lights cannot be guaranteed; from March 11 onwards, aurora visibility decreases significantly
+
+### Northern Lights Tour to Abisko
+- Duration: 6+ hours (18:00 to 01:00, depending on conditions)
+- Distance: ~100 km each way
+- Price: 1,600 SEK/adult, 800 SEK/child (6-12)
+- Minimum age: 6 years (not suitable for younger children due to late hours, darkness, and hiking)
+- Travel by mini-van or bus to Abisko National Park, one of the best places on Earth for aurora viewing
+- Includes: transportation from Camp Alta or Kiruna, warm winter gear, snacks, hot drinks, professional photos
+- Aurora cannot be guaranteed — natural phenomenon; no refunds if Northern Lights are not visible
+
+### Aurora Adventure Safari
+- Duration: 2 hours (without transfers)
+- Time: 21:00–23:00
+- Distance: 18 km
+- Price: 800 SEK/adult, 500 SEK/child (4-12)
+- Sit comfortably in a sled pulled by your guide's snowmobile through Arctic wilderness
+- Designed for guests who don't want to drive themselves
+- Includes: transfers from Kiruna, warm winter clothes, a picture in the wilderness
+
+### Tour Cancellation Policies
+- **Snowmobile tours**: 48-hour cancellation policy (less than 48h before = 100% charge)
+- **Dogsled tours**: 30+ days = 30% charge; 15-29 days = 75%; less than 14 days = 100%
+- **Northern Lights tours**: 5% non-refundable deposit; cancellation up to 24 hours before tour start; less than 24h = 100% charge
+- **All tours**: organizer reserves right to cancel due to weather, low participation, or unsafe conditions; full refund issued in such cases
+
+---
+
+## The Camp Experience
+
+### Free Amenities
+- Wood-fired saunas (multiple locations including a unique floating lake sauna)
+- Fire huts with grills
+- Common kitchen (for guests of small cabins)
+- Free WiFi throughout
+- Lake access for swimming (summer) and ice fishing (winter)
+- Beautiful walking trails through Arctic forest
+
+### Activities Available
+- Northern Lights viewing (peak season: November-March)
+- Cross-country skiing (rental available)
+- Snowshoeing (rental available)
+- Ice fishing
+- Hiking and nature walks
+- Lake swimming (summer)
+- Midnight sun viewing (June-July)
+
+---
+
+## Seasons in Kiruna
+
+### Winter (mid-November to mid-April)
+- Polar night: late November to mid-January (sun does not rise above horizon)
+- Northern Lights season: late September to early April; peak visibility December-February
+- Temperatures: average -12°C, can drop to -30°C or lower; record low -43.3°C
+- Activities: dogsledding, snowmobile tours, Northern Lights tours, ice fishing, ice hotel visits, Sámi cultural experiences
+
+### Summer (May to early September)
+- Midnight sun: late May to mid-July (sun does not set)
+- Mild temperatures: 10-20°C average
+- Activities: hiking, fishing, kayaking, photography, sauna, lake swimming
+- Peak time for the Kungsleden hiking trail and Abisko National Park
+
+---
+
+## About Kiruna
+
+Kiruna is Sweden's northernmost town, founded in 1900 around Sweden's largest iron ore mine. The town centre is being relocated 3 km east as the iron ore mine expands beneath it — a process expected to continue through 2035.
+
+### Notable Nearby Attractions
+- **ICEHOTEL** in Jukkasjärvi (17 km from Camp Alta) — world-famous ice hotel rebuilt every winter from frozen Torne River water
+- **Abisko National Park** (~100 km west) — UNESCO-recognized Aurora Sky Station, one of the planet's premier Northern Lights locations
+- **Kungsleden trail** — Sweden's most famous long-distance hiking trail
+- **Nutti Sámi Siida** — open-air Sámi (indigenous) museum in Jukkasjärvi
+- **Kiruna Church** (Kiruna Kyrka) — voted one of Sweden's most beautiful buildings
+- **LKAB iron ore mine tours** — visit Sweden's largest underground mine
+
+---
+
+## How to Get to Camp Alta
+
+### By Air
+- Kiruna Airport (KRN) is 12 km from Camp Alta
+- Direct flights from Stockholm Arlanda (1h 35min)
+- Seasonal direct flights from Helsinki, London, Manchester, Frankfurt
+- Local flight bus from airport to Kiruna city centre
+
+### By Train
+- Direct overnight trains from Stockholm to Kiruna (~17 hours)
+- Local bus from railway station to city centre
+
+### By Car
+- From Kiruna: follow the E10 road towards Luleå; the camp entrance is 15 km on the right
+- 4WD or winter tyres essential in winter
+
+### Camp Alta Shuttle
+- During winter season (November 15 - April 15)
+- Free shuttle for guests booking snowmobile tours
+- Pay-per-trip shuttle for accommodation-only bookings (450 SEK for up to 4 people, 900 SEK for 5-8)
+
+---
+
+## Frequently Asked Questions
+
+**What is the booking process?**
+You can book directly through our website or via our booking system. For further assistance, please contact us by email at info@campalta.se or phone at +46 706 529 374.
+
+**How do you handle bookings and payment?**
+We collect a non-refundable 5% deposit at the time of booking. Thirty days before arrival, you receive an email to complete the remaining 95%. If unpaid, your card is charged automatically. Failure to pay results in cancellation and forfeiture of the 5% deposit.
+
+**When should I book?**
+Book as early as possible, especially for the peak winter season (December-March).
+
+**What languages do you speak?**
+English, Swedish, Norwegian, French, German.
+
+**What time is check-in and check-out?**
+Check-in starts at 15:00; check-out is by 11:00. Early or late check-in/out may incur fees and is subject to availability.
+
+**Can I prepare my own food?**
+Yes — larger cabins have in-house kitchens; smaller cabins share access to a fully equipped common kitchen. There are no shops at the camp, so plan your groceries in Kiruna before arrival.
+
+**Are bed linen and towels included?**
+Not included. Available for rental on arrival, or bring your own.
+
+**Is there electricity, heating, and WiFi?**
+Yes, all cabins have electric heating, plug points for charging devices, and high-speed WiFi.
+
+**Can I see the Northern Lights from Camp Alta?**
+Yes — our remote location is far from city light pollution, so on clear nights the aurora is often visible directly from the camp.
+
+**Is Camp Alta pet-friendly?**
+Yes. Specific pet-friendly cabins are available; please request when booking.
+
+**Is smoking allowed?**
+Smoking is strictly prohibited inside cabins and service buildings. A 5,000 SEK fine applies for violations.
+
+**Where is Camp Alta located?**
+Jullebovägen 2, 981 92 Kiruna, in the village of Alttajärvi, 15 km east of Kiruna city centre on the E10 road.
+
+**What's the weather like?**
+Winter: average -12°C, can drop below -30°C. Summer: 10-20°C with midnight sun.
+
+---
+
+## Contact
+
+- Email: info@campalta.se
+- Phone: +46 706 529 374
+- Address: Jullebovägen 2, 981 92 Kiruna, Sweden
+- Website: https://campalta.net
+- TripAdvisor: https://www.tripadvisor.com/Hotel_Review-g189815-d944749-Reviews-Camp_Alta-Kiruna_Norrbotten_County.html
+
+For booking inquiries, tour availability, or special arrangements, please contact us by email — we typically respond within 24 hours.

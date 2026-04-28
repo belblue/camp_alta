@@ -131,6 +131,7 @@ useSeo({
   title: 'About Us - Meet the Camp Alta Team | Camp Alta Kiruna',
   description: 'Meet the passionate team behind Camp Alta Kiruna. Learn about our beginnings, our mission to share the beauty of Swedish Lapland, and the diverse team that makes your Arctic adventure unforgettable.',
   path: '/theCamp/AboutUs',
+  image: '/camp/general/general_1.webp',
 })
 
 import { onMounted, onUnmounted } from 'vue';

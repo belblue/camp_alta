@@ -24,9 +24,14 @@ export function useSeo(options: {
     ogDescription: options.description,
     ogUrl: canonicalUrl,
     ogImage: image,
+    ogImageAlt: options.title,
     ogType: options.type || 'website',
+    ogSiteName: 'Camp Alta Kiruna',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
     twitterTitle: options.title,
     twitterDescription: options.description,
     twitterImage: image,
+    twitterImageAlt: options.title,
   })
 }

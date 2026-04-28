@@ -8,8 +8,8 @@
         <h3 class="text-lg font-semibold mb-2 text-gray-900">Cookie Consent</h3>
         <p class="text-lg text-gray-700">
           We use cookies to enhance your experience and analyze website traffic.
-          This includes Google Analytics to help us understand how visitors use
-          our site.
+          This includes Google Analytics and Microsoft Clarity to help us
+          understand how visitors use our site.
           <NuxtLink
             to="/docs/Cookies"
             class="underline text-primary hover:text-secondary"
@@ -41,6 +41,24 @@ import { ref, onMounted } from "vue";
 
 const showBanner = ref(false);
 
+const CLARITY_PROJECT_ID = "wiojla23ok";
+
+const loadClarity = () => {
+  if (typeof window === "undefined" || window.clarity) return;
+  (function (c, l, a, r, i, t, y) {
+    c[a] =
+      c[a] ||
+      function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+    t = l.createElement(r);
+    t.async = 1;
+    t.src = "https://www.clarity.ms/tag/" + i;
+    y = l.getElementsByTagName(r)[0];
+    y.parentNode.insertBefore(t, y);
+  })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+};
+
 const setCookieConsent = (consent) => {
   if (typeof window !== "undefined") {
     localStorage.setItem("cookie-consent", consent);
@@ -55,19 +73,19 @@ const acceptCookies = () => {
   setCookieConsent("accepted");
   showBanner.value = false;
 
-  // Enable Google Analytics
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("consent", "update", {
       analytics_storage: "granted",
     });
   }
+
+  loadClarity();
 };
 
 const rejectCookies = () => {
   setCookieConsent("rejected");
   showBanner.value = false;
 
-  // Disable Google Analytics
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("consent", "update", {
       analytics_storage: "denied",
@@ -80,6 +98,8 @@ onMounted(() => {
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) {
       showBanner.value = true;
+    } else if (consent === "accepted") {
+      loadClarity();
     }
   }
 });

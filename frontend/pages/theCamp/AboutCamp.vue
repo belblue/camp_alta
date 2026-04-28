@@ -1650,6 +1650,7 @@ useSeo({
   title: 'About the Camp - Facilities & Amenities | Camp Alta Kiruna',
   description: 'Discover Camp Alta Kiruna, a wilderness camp nestled in the Arctic forests of Swedish Lapland by Lake Altajärvi. Explore our cabins, saunas, common areas, and outdoor facilities just 17 km from Kiruna.',
   path: '/theCamp/AboutCamp',
+  image: '/header/header_aboutcamp.webp',
 })
 
 import { onMounted, onUnmounted } from "vue";

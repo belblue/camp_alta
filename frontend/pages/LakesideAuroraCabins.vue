@@ -873,6 +873,7 @@ useSeo({
   title: 'Lakeside Aurora Cabins - Premium Lakefront Stays | Camp Alta Kiruna',
   description: 'Premium lakeside cabins with aurora views on Lake Altajärvi. Private saunas, fully equipped kitchens, and stunning Northern Lights views in Kiruna, Swedish Lapland.',
   path: '/LakesideAuroraCabins',
+  image: '/lakeside/hero_landing.webp',
 })
 
 import { onMounted, onUnmounted, computed } from "vue";

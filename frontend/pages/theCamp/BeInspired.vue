@@ -29,6 +29,7 @@ useSeo({
   title: 'Be Inspired - Arctic Adventures & Experiences | Camp Alta Kiruna',
   description: 'Get inspired by stories and experiences shared by Camp Alta guests. Discover the magic of Arctic Lapland through the eyes of travelers from around the world.',
   path: '/theCamp/BeInspired',
+  image: '/index/index_5.webp',
 })
 
 import { onMounted, ref } from 'vue';

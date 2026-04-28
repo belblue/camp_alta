@@ -359,9 +359,12 @@ useHead({
       name: 'Aurora Adventure Safari',
       description: '2-hour evening snowmobile-sled safari through Arctic wilderness for Northern Lights viewing. 18km journey from Camp Alta.',
       touristType: 'Nature Tourism',
+      image: 'https://campalta.net/tours/safari/safari_1.webp',
+      duration: 'PT2H',
       provider: { '@type': 'LodgingBusiness', name: 'Camp Alta Kiruna', url: 'https://campalta.net' },
       offers: [
-        { '@type': 'Offer', name: 'Aurora Adventure Safari (2 hours)', price: '800', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Aurora Adventure Safari (adult)', price: '800', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Aurora Adventure Safari (child 4-12)', price: '500', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
       ],
       location: { '@type': 'Place', name: 'Camp Alta, Kiruna', address: { '@type': 'PostalAddress', streetAddress: 'Jullebovägen 2', addressLocality: 'Kiruna', postalCode: '981 92', addressCountry: 'SE' } },
     }),

@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiBackendUrl: process.env.NUXT_API_BACKEND_URL || 'http://localhost:8000',
     public: {
-      cacheVersion: "2026041501", // Update this when you need to bust cache
+      cacheVersion: "2026042801", // Update this when you need to bust cache
     },
   },
   ssr: true,

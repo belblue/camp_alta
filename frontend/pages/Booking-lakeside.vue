@@ -1,4 +1,5 @@
 <template>
+    <div class="overflow-x-hidden">
     <div id="screen" class="">
         <section class="hero bg-[url('/header/back.webp')] bg-cover">
         </section>
@@ -29,39 +30,94 @@
                 <div v-if="loading" class="flex justify-center items-center py-20">
                     <div class="animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-primary"></div>
                 </div>
+                <div v-if="error" class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-lg p-6 my-10 text-center">
+                    <p class="text-xl font-bold mb-2">Booking system temporarily unavailable</p>
+                    <p class="text-gray-700">Sorry, it looks like there is a problem with our booking provider. You can contact us at <a href="mailto:info@campalta.se" class="text-primary font-bold underline">info@campalta.se</a> with your booking request. Sorry for the inconvenience.</p>
+                </div>
                 <div ref="widgetContainer"></div>
             </ClientOnly>
         </div>
         <Footer/>
     </section>
+    </div>
   </template>
 
 <script lang="ts" setup>
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+
 useSeo({
   title: 'Book Lakeside Aurora Cabins | Camp Alta Kiruna',
   description: 'Book your stay at the Lakeside Aurora Cabins at Camp Alta Kiruna. Premium lakefront cabins with stunning Northern Lights views on Lake Altajärvi in Swedish Lapland.',
   path: '/Booking-lakeside',
+  image: '/lakeside/general/gen_9.webp',
 })
-</script>
-<script lang="ts">
-export default {
-  data() {
-    return { loading: true };
-  },
-  mounted() {
-    this.$nextTick(() => {
-      const script = document.createElement('script');
-      script.src = 'https://secured.sirvoy.com/widget/sirvoy.js';
-      script.async = true;
-      script.setAttribute('data-form-id', '80bf61cb7ac6ed2e');
-      script.onload = () => {
-        setTimeout(() => { this.loading = false; }, 500);
-      };
 
-      if (this.$refs.widgetContainer) {
-        this.$refs.widgetContainer.appendChild(script);
+const loading = ref(true)
+const error = ref(false)
+const widgetContainer = ref<HTMLElement | null>(null)
+let fallbackTimer: number | undefined
+let observer: MutationObserver | undefined
+
+onMounted(() => {
+  nextTick(() => {
+    const container = widgetContainer.value
+    if (!container) return
+
+    const trackClarity = (event: string) => {
+      const w = window as any
+      if (typeof w.clarity === 'function') {
+        w.clarity('event', event)
+        w.clarity('set', 'last_booking_event', event)
       }
-    });
-  },
-};
+    }
+
+    const finish = () => {
+      loading.value = false
+      observer?.disconnect()
+      if (fallbackTimer) clearTimeout(fallbackTimer)
+      trackClarity('booking_widget_loaded_lakeside')
+    }
+
+    const fail = () => {
+      loading.value = false
+      error.value = true
+      observer?.disconnect()
+      if (fallbackTimer) clearTimeout(fallbackTimer)
+      trackClarity('booking_widget_failed_lakeside')
+    }
+
+    const checkIframe = () => {
+      const iframe = container.querySelector('iframe') as HTMLIFrameElement | null
+      if (!iframe) return false
+      if (iframe.contentDocument?.readyState === 'complete') {
+        finish()
+      } else {
+        iframe.addEventListener('load', finish, { once: true })
+        observer?.disconnect()
+      }
+      return true
+    }
+
+    observer = new MutationObserver(() => { checkIframe() })
+    observer.observe(container, { childList: true, subtree: true })
+
+    const script = document.createElement('script')
+    script.src = 'https://secured.sirvoy.com/widget/sirvoy.js'
+    script.async = true
+    script.setAttribute('data-form-id', '80bf61cb7ac6ed2e')
+    script.onerror = fail
+    container.appendChild(script)
+
+    requestAnimationFrame(() => { checkIframe() })
+
+    fallbackTimer = window.setTimeout(() => {
+      if (!checkIframe()) fail()
+    }, 15000)
+  })
+})
+
+onBeforeUnmount(() => {
+  if (fallbackTimer) clearTimeout(fallbackTimer)
+  observer?.disconnect()
+})
 </script>

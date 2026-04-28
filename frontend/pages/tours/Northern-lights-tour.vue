@@ -674,9 +674,12 @@ useHead({
       name: 'Northern Lights Tour to Abisko National Park',
       description: 'Evening aurora hunting trip to Abisko National Park, one of the best places on Earth to see the Northern Lights. 6+ hours with professional guides.',
       touristType: 'Nature Tourism',
+      image: 'https://campalta.net/tours/northern/northern_8.webp',
+      duration: 'PT6H',
       provider: { '@type': 'LodgingBusiness', name: 'Camp Alta Kiruna', url: 'https://campalta.net' },
       offers: [
-        { '@type': 'Offer', name: 'Northern Lights Tour (6+ hours)', price: '1600', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Northern Lights tour (adult)', price: '1600', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Northern Lights tour (child 6-12)', price: '800', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
       ],
       location: { '@type': 'Place', name: 'Abisko National Park', address: { '@type': 'PostalAddress', addressLocality: 'Abisko', addressCountry: 'SE' } },
     }),

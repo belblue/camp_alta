@@ -111,6 +111,7 @@ useSeo({
   title: 'Summer in Kiruna - Midnight Sun & Nature | Camp Alta',
   description: 'Experience summer at Camp Alta Kiruna with 24-hour midnight sun, lakeside relaxation, fishing, hiking, and saunas. The perfect base for exploring Arctic Lapland in the warm months.',
   path: '/theCamp/Summer',
+  image: '/camping.webp',
 })
 
 import { onMounted, onUnmounted } from "vue";

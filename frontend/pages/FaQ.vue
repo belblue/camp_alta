@@ -871,6 +871,7 @@ useSeo({
   title: 'FAQ - Camp Alta Kiruna | Booking, Cabins & Arctic Info',
   description: 'Frequently asked questions about Camp Alta Kiruna. Find answers about booking, cabins, camp services, getting here, and activities in Swedish Lapland.',
   path: '/FaQ',
+  image: '/header/header_prices.webp',
 })
 
 const faqItems = [

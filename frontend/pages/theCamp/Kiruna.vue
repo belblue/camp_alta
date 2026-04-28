@@ -283,6 +283,7 @@ useSeo({
   title: 'About Kiruna - Gateway to Swedish Lapland | Camp Alta',
   description: 'Discover Kiruna, Sweden\'s northernmost town and gateway to Arctic adventures. Experience polar night, midnight sun, the ICEHOTEL, Abisko National Park, and Sámi culture, all near Camp Alta.',
   path: '/theCamp/Kiruna',
+  image: '/kiruna/kiruna-2.webp',
 })
 
 import { onMounted, onUnmounted } from 'vue';

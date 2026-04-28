@@ -44,7 +44,7 @@
 
   <url>
     <loc>https://campalta.net/Prices</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -81,6 +81,13 @@
   <url>
     <loc>https://campalta.net/booking/Booking-services</loc>
     <lastmod>2026-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://campalta.net/booking/Booking-caravans</loc>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -268,7 +275,7 @@
   <!-- Tour Pages -->
   <url>
     <loc>https://campalta.net/tours/Snowmobile-tours</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -279,7 +286,7 @@
 
   <url>
     <loc>https://campalta.net/tours/Dogsled-tour</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -290,7 +297,7 @@
 
   <url>
     <loc>https://campalta.net/tours/Northern-lights-tour</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -301,7 +308,7 @@
 
   <url>
     <loc>https://campalta.net/tours/Aurora-adventure-safari</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -363,7 +370,7 @@
 
   <url>
     <loc>https://campalta.net/docs/Cookies</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -3,7 +3,7 @@
     <div class="grid lg:grid-cols-4 justify-center items-justify">
       <div class="flex justify-center">
         <NuxtLink class="p-2" title="back to main" to="/">
-          <img src="/campalta.webp" alt="logo campalta" class="w-52" />
+          <img src="/logo.svg" alt="logo campalta" class="w-52" />
         </NuxtLink>
       </div>
       <div class="text-center">

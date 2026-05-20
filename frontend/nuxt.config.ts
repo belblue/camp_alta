@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiBackendUrl: process.env.NUXT_API_BACKEND_URL || 'http://localhost:8000',
     public: {
-      cacheVersion: "2026042802", // Update this when you need to bust cache
+      cacheVersion: "2026042803", // Update this when you need to bust cache
     },
   },
   ssr: true,
@@ -47,12 +47,71 @@ export default defineNuxtConfig({
               },
             },
 
+            // HTML pages - top-level PascalCase routes (actual paths in pages/)
+            "/Cabins": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/TheCamp": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/Tours": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/Prices": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/Booking": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/Booking-lakeside": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/FaQ": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/LakesideAuroraCabins": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+
+            // HTML pages - sub-route folders
+            "/booking/**": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/cabins-lakeside/**": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+            "/docs/**": {
+              headers: {
+                "cache-control": "public, max-age=3600, s-maxage=7200",
+              },
+            },
+
             // API routes - very short cache
             "/api/**": {
               headers: { "cache-control": "public, max-age=60, s-maxage=300" },
             },
 
-            // Static assets - long cache with versioning
+            // Nuxt-generated chunks - immutable, versioned by Nuxt
             "/_nuxt/**": {
               headers: {
                 "cache-control":
@@ -60,46 +119,10 @@ export default defineNuxtConfig({
               },
             },
 
-            // Images - long cache with proper headers
-            "/**/*.{png,jpg,jpeg,gif,webp,svg,ico}": {
-              headers: {
-                "cache-control":
-                  "public, max-age=31536000, s-maxage=31536000, immutable",
-                expires: new Date(Date.now() + 31536000000).toUTCString(),
-              },
-            },
-
-            // Fonts - long cache
-            "/**/*.{woff,woff2,ttf,eot}": {
-              headers: {
-                "cache-control":
-                  "public, max-age=31536000, s-maxage=31536000, immutable",
-                expires: new Date(Date.now() + 31536000000).toUTCString(),
-              },
-            },
-
-            // CSS/JS - long cache with versioning
-            "/**/*.{css,js}": {
-              headers: {
-                "cache-control":
-                  "public, max-age=31536000, s-maxage=31536000, immutable",
-              },
-            },
-
-            // Video files - long cache
-            "/**/*.{mp4,webm,ogg}": {
-              headers: {
-                "cache-control":
-                  "public, max-age=31536000, s-maxage=31536000, immutable",
-              },
-            },
-
-            // Documents - medium cache
-            "/**/*.{pdf,doc,docx}": {
-              headers: {
-                "cache-control": "public, max-age=86400, s-maxage=172800",
-              },
-            },
+            // Note: cache-control for static files in public/ (images, fonts,
+            // svgs, etc.) is set by server/plugins/cache-static-assets.ts.
+            // Nitro's rou3 router doesn't reliably support glob patterns like
+            // /**/*.{ext} for routeRules.
 
             // Manifest and service worker - short cache
             "/favicon/site.webmanifest": {
@@ -110,6 +133,9 @@ export default defineNuxtConfig({
                 "cache-control": "public, max-age=0, must-revalidate",
               },
             },
+            // No /** fallback: it would override the long-cache header set by
+            // server/plugins/cache-static-assets.ts on files in /public. New
+            // page routes must be listed explicitly above.
           }
         : {
             // Dev mode - no caching

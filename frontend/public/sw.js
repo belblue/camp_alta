@@ -1,4 +1,4 @@
-const CACHE_VERSION = '2026042802'; // Update this to bust cache
+const CACHE_VERSION = '2026042803'; // Update this to bust cache
 const CACHE_NAME = `camp-alta-v${CACHE_VERSION}`;
 const STATIC_CACHE = `camp-alta-static-v${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `camp-alta-dynamic-v${CACHE_VERSION}`;
@@ -146,6 +146,7 @@ async function cleanupCache(cacheName, maxEntries, maxAge) {
   const now = Date.now();
   for (const key of keys) {
     const response = await cache.match(key);
+    if (!response) continue;
     const cachedTime = response.headers.get('sw-cache-time');
     if (cachedTime && (now - parseInt(cachedTime)) > maxAge) {
       await cache.delete(key);

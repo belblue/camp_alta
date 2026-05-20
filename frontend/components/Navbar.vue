@@ -2,10 +2,10 @@
     <div  class="nav fixed top-0 z-2000 w-full" :class="headerClass">
         <div class=" py-2 px-4 flex mt-1 mx-2 flex-row " :class="bgClass" ><!-- data-aos="fade" data-aos-delay="750" class="bg-white top-0 w-full z-10 shadow-md py-1 px-4 absolute flex flex-row items-center justify-between "-->
             <NuxtLink to="/" class="bg-white top-2 left-2 p-2 absolute lg:block hidden" title="back to mainpage">            
-                <img src="/campalta.webp" alt="logo campalta" class="w-28">
+                <img src="/logo.svg" alt="logo campalta" class="w-28">
             </NuxtLink>
             <NuxtLink to="/" class="block lg:hidden bg-white top-2 left-2 p-2 absolute"  title="back to mainpage">            
-                <img src="/campalta.webp" alt="logo camp alta" class="w-20">
+                <img src="/logo.svg" alt="logo camp alta" class="w-20">
             </NuxtLink>
             <div class="hidden md:flex lg:hidden w-24 text-white">.</div>
             <div class="ml-28 pt-1 mr-auto hidden lg:block">

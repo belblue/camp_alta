@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiBackendUrl: process.env.NUXT_API_BACKEND_URL || 'http://localhost:8000',
     public: {
-      cacheVersion: "2026052001", // Update this when you need to bust cache
+      cacheVersion: "2026052002", // Update this when you need to bust cache
     },
   },
   ssr: true,
@@ -262,17 +262,8 @@ export default defineNuxtConfig({
           href: "/favicon/safari-pinned-tab.svg",
         },
         { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
-        { rel: "preconnect", href: "https://www.juicer.io" },
         { rel: "preconnect", href: "https://camp-alta.checkfront.com" },
-        { rel: "preconnect", href: "https://www.jscache.com" },
-        { rel: "preconnect", href: "https://www.google.com" },
         { rel: "dns-prefetch", href: "https://www.googletagmanager.com" },
-        {
-          rel: "preload",
-          href: "/index/index_1.webp",
-          as: "image",
-          type: "image/webp",
-        },
         {
           rel: "preload",
           href: "/logo.svg",
@@ -418,21 +409,30 @@ export default defineNuxtConfig({
         {
           type: "text/javascript",
           innerHTML: `
-              if ('serviceWorker' in navigator) {
+              (function() {
+                var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+                if (!('serviceWorker' in navigator)) return;
+                if (isLocal) {
+                  // Dev mode: actively unregister any existing SW to prevent
+                  // stale cache from serving wrong MIME types on chunked JS.
+                  navigator.serviceWorker.getRegistrations().then(function(regs) {
+                    regs.forEach(function(r) { r.unregister(); });
+                  });
+                  return;
+                }
                 window.addEventListener('load', function() {
                   navigator.serviceWorker.register('/sw.js')
                     .then(function(registration) {
                       console.log('ServiceWorker registration successful');
-                      // Periodic cache cleanup
-                      setInterval(() => {
-                        registration.active?.postMessage({type: 'CLEANUP_CACHE'});
-                      }, 60000); // Every minute
+                      setInterval(function() {
+                        registration.active && registration.active.postMessage({type: 'CLEANUP_CACHE'});
+                      }, 60000);
                     })
                     .catch(function(err) {
                       console.log('ServiceWorker registration failed: ', err);
                     });
                 });
-              }
+              })();
             `,
         },
         {

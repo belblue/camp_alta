@@ -1704,7 +1704,24 @@ useSeo({
   image: "/index/index_1.webp",
 });
 
+const heroPreloadHref = (() => {
+  const today = new Date();
+  const m = today.getMonth() + 1;
+  const d = today.getDate();
+  const isSummer = (m >= 4 && m <= 8) || (m === 9 && d < 15);
+  return isSummer ? "/index/index_1.webp" : "/index/index_2.webp";
+})();
+
 useHead({
+  link: [
+    {
+      rel: "preload",
+      href: heroPreloadHref,
+      as: "image",
+      type: "image/webp",
+      fetchpriority: "high",
+    },
+  ],
   script: [{
     type: "application/ld+json",
     innerHTML: JSON.stringify({

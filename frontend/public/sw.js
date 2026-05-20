@@ -1,4 +1,4 @@
-const CACHE_VERSION = '2026042803'; // Update this to bust cache
+const CACHE_VERSION = '2026052001'; // Update this to bust cache
 const CACHE_NAME = `camp-alta-v${CACHE_VERSION}`;
 const STATIC_CACHE = `camp-alta-static-v${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `camp-alta-dynamic-v${CACHE_VERSION}`;

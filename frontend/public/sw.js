@@ -78,7 +78,10 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     cacheFirst(request)
       .catch(() => networkFirst(request))
-      .catch(() => caches.match('/offline.html'))
+      .catch(async () => {
+        const offline = await caches.match('/offline.html');
+        return offline || new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
+      })
   );
 });
 

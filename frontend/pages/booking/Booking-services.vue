@@ -62,6 +62,10 @@
   </section>
 </template>
 <script lang="ts" setup>
+useHead({
+  link: [{ rel: "preconnect", href: "https://camp-alta.checkfront.com" }],
+});
+
 useSeo({
   title: "Book Extra Services | Camp Alta Kiruna",
   description:

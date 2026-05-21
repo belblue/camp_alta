@@ -61,6 +61,10 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
+useHead({
+  link: [{ rel: 'preconnect', href: 'https://camp-alta.checkfront.com' }],
+})
+
 useSeo({
   title: 'Book Your Stay - Cabins & Tours | Camp Alta Kiruna',
   description: 'Book your stay at Camp Alta Kiruna. Browse availability for cabins, tours, caravan spots, and extra services in the heart of Swedish Lapland.',

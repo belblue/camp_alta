@@ -45,6 +45,10 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
+useHead({
+  link: [{ rel: 'preconnect', href: 'https://secured.sirvoy.com' }],
+})
+
 useSeo({
   title: 'Book Lakeside Aurora Cabins | Camp Alta Kiruna',
   description: 'Book your stay at the Lakeside Aurora Cabins at Camp Alta Kiruna. Premium lakefront cabins with stunning Northern Lights views on Lake Altajärvi in Swedish Lapland.',

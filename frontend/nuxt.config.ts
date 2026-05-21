@@ -262,7 +262,6 @@ export default defineNuxtConfig({
           href: "/favicon/safari-pinned-tab.svg",
         },
         { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
-        { rel: "preconnect", href: "https://camp-alta.checkfront.com" },
         { rel: "dns-prefetch", href: "https://www.googletagmanager.com" },
         {
           rel: "preload",
@@ -315,6 +314,15 @@ export default defineNuxtConfig({
         },
       ],
       script: [
+        // GA4 / GTM. Loaded once here (manually) because nuxt-gtag's own
+        // injection emits both <link rel=preload> and <script>, which Chrome
+        // fetches as two separate requests for the same URL.
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-HGKXFJ0CPJ",
+          defer: true,
+          "data-gtag": "",
+          key: "gtag-js",
+        },
         // Auto-reload on chunk loading errors (handles stale cache)
         {
           type: "text/javascript",
@@ -542,6 +550,11 @@ export default defineNuxtConfig({
 
   gtag: {
     id: "G-HGKXFJ0CPJ",
+    // Manual mode: nuxt-gtag still queues gtag('js')/gtag('config') into
+    // dataLayer, but skips its own <link rel=preload> + <script> pair (which
+    // caused gtag/js?id=G-HGKXFJ0CPJ to download twice). We inject the
+    // <script> ourselves below in app.head.script.
+    initMode: "manual",
     config: {
       consent: {
         analytics_storage: "denied",

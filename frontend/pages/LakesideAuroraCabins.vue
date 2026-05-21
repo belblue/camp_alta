@@ -657,7 +657,8 @@
           <p
             class="title text-white lg:text-9xl text-center"
             style="
-              text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7),
+              text-shadow:
+                2px 2px 8px rgba(0, 0, 0, 0.7),
                 0 0 20px rgba(0, 0, 0, 0.5);
             "
           >
@@ -854,10 +855,11 @@
             </p>
             <div class="flex justify-center mt-8">
               <iframe
-                class="mb-4 w-200 lg:w-[400px]"
+                class="mb-4 w-full max-w-[400px]"
                 style="border: 0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d771125.8104534644!2d19.95197992395521!3d67.82188320000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d0c7dcfface7c5%3A0x8ac9956e5888d6e3!2sCamp%20Alta!5e0!3m2!1ses!2sad!4v1681807724425!5m2!1ses!2sad"
                 loading="lazy"
+                title="Camp Alta location on Google Maps"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -870,11 +872,12 @@
 </template>
 <script lang="ts" setup>
 useSeo({
-  title: 'Lakeside Aurora Cabins - Premium Lakefront Stays | Camp Alta Kiruna',
-  description: 'Premium lakeside cabins with aurora views on Lake Altajärvi. Private saunas, fully equipped kitchens, and stunning Northern Lights views in Kiruna, Swedish Lapland.',
-  path: '/LakesideAuroraCabins',
-  image: '/lakeside/hero_landing.webp',
-})
+  title: "Lakeside Aurora Cabins - Premium Lakefront Stays | Camp Alta Kiruna",
+  description:
+    "Premium lakeside cabins with aurora views on Lake Altajärvi. Private saunas, fully equipped kitchens, and stunning Northern Lights views in Kiruna, Swedish Lapland.",
+  path: "/LakesideAuroraCabins",
+  image: "/lakeside/hero_landing.webp",
+});
 
 import { onMounted, onUnmounted, computed } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";

@@ -89,12 +89,12 @@
       position: fixed;
       z-index: 1;
       top: 0;
-      height: 100vh; 
-      width: 100vw;
+      height: 100vh;
+      width: 100%;
       left: 0;
       padding-bottom:1000px;
       /*background-color: transparent;*/
-    
+
     }
  
 

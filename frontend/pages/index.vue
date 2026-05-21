@@ -1,28 +1,21 @@
 <template>
   <div id="screen" class="max-h-screen">
     <section class="relative hero h-screen w-full overflow-hidden">
-      <picture>
-        <source
-          media="(max-width: 640px)"
-          :srcset="heroImageSrc"
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 1024px)"
-          :srcset="heroImageSrc"
-          type="image/webp"
-        />
-        <img
-          :src="heroImageSrc"
-          alt="Camp Alta Kiruna - Arctic wilderness camp in Swedish Lapland"
-          class="absolute inset-0 w-full h-full object-cover"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-          width="1920"
-          height="1080"
-        />
-      </picture>
+      <NuxtImg
+        :src="heroImageSrc"
+        alt="Camp Alta Kiruna - Arctic wilderness camp in Swedish Lapland"
+        class="absolute inset-0 w-full h-full object-cover"
+        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw"
+        densities="x1"
+        format="webp"
+        quality="80"
+        width="1920"
+        height="1080"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        preload
+      />
     </section>
     <!-- <div class="">
             <div class="background-carousel ">
@@ -1652,10 +1645,11 @@
             </p>
             <div class="flex justify-center mt-8">
               <iframe
-                class="mb-4 w-200 lg:w-[400px]"
+                class="mb-4 w-full max-w-[400px]"
                 style="border: 0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d771125.8104534644!2d19.95197992395521!3d67.82188320000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d0c7dcfface7c5%3A0x8ac9956e5888d6e3!2sCamp%20Alta!5e0!3m2!1ses!2sad!4v1681807724425!5m2!1ses!2sad"
                 loading="lazy"
+                title="Camp Alta location on Google Maps"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -1722,77 +1716,165 @@ useHead({
       fetchpriority: "high",
     },
   ],
-  script: [{
-    type: "application/ld+json",
-    innerHTML: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LodgingBusiness",
-      "@id": "https://campalta.net/#lodging",
-      name: "Camp Alta Kiruna",
-      alternateName: "Camp Alta",
-      description: "Arctic wilderness camp in Kiruna, Swedish Lapland. Cozy cabin accommodation on the shores of Lake Altajärvi, 7 km from Kiruna city centre and 200 km north of the Arctic Circle. Year-round destination for Northern Lights, dog sledding, snowmobile tours, and midnight sun experiences.",
-      url: "https://campalta.net",
-      logo: "https://campalta.net/logo.svg",
-      image: [
-        "https://campalta.net/index/index_1.webp",
-        "https://campalta.net/index/index_2.webp",
-        "https://campalta.net/index/index_3.webp",
-      ],
-      telephone: "+46706529374",
-      email: "info@campalta.se",
-      priceRange: "$$",
-      currenciesAccepted: "SEK, EUR",
-      paymentAccepted: "Cash, Credit Card",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Jullebovägen 2",
-        addressLocality: "Kiruna",
-        postalCode: "981 92",
-        addressRegion: "Norrbotten",
-        addressCountry: "SE",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 67.8558,
-        longitude: 20.2253,
-      },
-      areaServed: {
-        "@type": "Place",
-        name: "Swedish Lapland",
-      },
-      checkinTime: "15:00",
-      checkoutTime: "11:00",
-      petsAllowed: true,
-      smokingAllowed: false,
-      numberOfRooms: 17,
-      amenityFeature: [
-        { "@type": "LocationFeatureSpecification", name: "Free WiFi", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Free parking", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Wood-fired sauna", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Floating lake sauna", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Fire hut with grill", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Northern Lights viewing", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Lake access", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Pet friendly", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Heating", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Cable TV", value: true },
-      ],
-      makesOffer: [
-        { "@type": "Offer", name: "Forest cabin (small, 12m²)", priceCurrency: "SEK", category: "Accommodation" },
-        { "@type": "Offer", name: "Forest cabin (medium, 25-40m²)", priceCurrency: "SEK", category: "Accommodation" },
-        { "@type": "Offer", name: "Forest house (large, 90-162m²)", priceCurrency: "SEK", category: "Accommodation" },
-        { "@type": "Offer", name: "Lakeside Aurora Cabin (premium)", priceCurrency: "SEK", category: "Accommodation" },
-        { "@type": "Offer", name: "Caravan / motorhome pitch", priceCurrency: "SEK", category: "Camping" },
-        { "@type": "Offer", name: "Snowmobile tour", priceCurrency: "SEK", category: "Tour" },
-        { "@type": "Offer", name: "Dog sledding tour", priceCurrency: "SEK", category: "Tour" },
-        { "@type": "Offer", name: "Northern Lights tour to Abisko", priceCurrency: "SEK", category: "Tour" },
-        { "@type": "Offer", name: "Aurora Adventure Safari", priceCurrency: "SEK", category: "Tour" },
-      ],
-      sameAs: [
-        "https://www.tripadvisor.com/Hotel_Review-g189815-d944749-Reviews-Camp_Alta-Kiruna_Norrbotten_County.html",
-      ],
-    }),
-  }],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "@id": "https://campalta.net/#lodging",
+        name: "Camp Alta Kiruna",
+        alternateName: "Camp Alta",
+        description:
+          "Arctic wilderness camp in Kiruna, Swedish Lapland. Cozy cabin accommodation on the shores of Lake Altajärvi, 7 km from Kiruna city centre and 200 km north of the Arctic Circle. Year-round destination for Northern Lights, dog sledding, snowmobile tours, and midnight sun experiences.",
+        url: "https://campalta.net",
+        logo: "https://campalta.net/logo.svg",
+        image: [
+          "https://campalta.net/index/index_1.webp",
+          "https://campalta.net/index/index_2.webp",
+          "https://campalta.net/index/index_3.webp",
+        ],
+        telephone: "+46706529374",
+        email: "info@campalta.se",
+        priceRange: "$$",
+        currenciesAccepted: "SEK, EUR",
+        paymentAccepted: "Cash, Credit Card",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Jullebovägen 2",
+          addressLocality: "Kiruna",
+          postalCode: "981 92",
+          addressRegion: "Norrbotten",
+          addressCountry: "SE",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 67.8558,
+          longitude: 20.2253,
+        },
+        areaServed: {
+          "@type": "Place",
+          name: "Swedish Lapland",
+        },
+        checkinTime: "15:00",
+        checkoutTime: "11:00",
+        petsAllowed: true,
+        smokingAllowed: false,
+        numberOfRooms: 17,
+        amenityFeature: [
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Free WiFi",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Free parking",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Wood-fired sauna",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Floating lake sauna",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Fire hut with grill",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Northern Lights viewing",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Lake access",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Pet friendly",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Heating",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Cable TV",
+            value: true,
+          },
+        ],
+        makesOffer: [
+          {
+            "@type": "Offer",
+            name: "Forest cabin (small, 12m²)",
+            priceCurrency: "SEK",
+            category: "Accommodation",
+          },
+          {
+            "@type": "Offer",
+            name: "Forest cabin (medium, 25-40m²)",
+            priceCurrency: "SEK",
+            category: "Accommodation",
+          },
+          {
+            "@type": "Offer",
+            name: "Forest house (large, 90-162m²)",
+            priceCurrency: "SEK",
+            category: "Accommodation",
+          },
+          {
+            "@type": "Offer",
+            name: "Lakeside Aurora Cabin (premium)",
+            priceCurrency: "SEK",
+            category: "Accommodation",
+          },
+          {
+            "@type": "Offer",
+            name: "Caravan / motorhome pitch",
+            priceCurrency: "SEK",
+            category: "Camping",
+          },
+          {
+            "@type": "Offer",
+            name: "Snowmobile tour",
+            priceCurrency: "SEK",
+            category: "Tour",
+          },
+          {
+            "@type": "Offer",
+            name: "Dog sledding tour",
+            priceCurrency: "SEK",
+            category: "Tour",
+          },
+          {
+            "@type": "Offer",
+            name: "Northern Lights tour to Abisko",
+            priceCurrency: "SEK",
+            category: "Tour",
+          },
+          {
+            "@type": "Offer",
+            name: "Aurora Adventure Safari",
+            priceCurrency: "SEK",
+            category: "Tour",
+          },
+        ],
+        sameAs: [
+          "https://www.tripadvisor.com/Hotel_Review-g189815-d944749-Reviews-Camp_Alta-Kiruna_Norrbotten_County.html",
+        ],
+      }),
+    },
+  ],
 });
 
 import { onMounted, onUnmounted, computed } from "vue";
@@ -1813,9 +1895,7 @@ const heroImageSrc = computed(() => {
   const month = today.getMonth() + 1;
   const day = today.getDate();
 
-  const isSummer =
-    (month >= 4 && month <= 8) ||
-    (month === 9 && day < 15);
+  const isSummer = (month >= 4 && month <= 8) || (month === 9 && day < 15);
 
   return isSummer ? "/index/index_1.webp" : "/index/index_2.webp";
 });

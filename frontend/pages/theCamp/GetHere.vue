@@ -115,7 +115,7 @@
                     Jullebovägen 2, 981 92 Kiruna, Sweden
                 </p>
                <div class="flex justify-center mt-8">
-                    <iframe class="mb-4 w-200  lg:w-[600px] h-[40vh]" title="Camp Alta location on Google Maps" style="border:0;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d771125.8104534644!2d19.95197992395521!3d67.82188320000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d0c7dcfface7c5%3A0x8ac9956e5888d6e3!2sCamp%20Alta!5e0!3m2!1ses!2sad!4v1681807724425!5m2!1ses!2sad"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="mb-4 w-full max-w-[600px] h-[40vh]" title="Camp Alta location on Google Maps" style="border:0;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d771125.8104534644!2d19.95197992395521!3d67.82188320000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d0c7dcfface7c5%3A0x8ac9956e5888d6e3!2sCamp%20Alta!5e0!3m2!1ses!2sad!4v1681807724425!5m2!1ses!2sad"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

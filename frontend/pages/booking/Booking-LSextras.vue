@@ -20,6 +20,10 @@
     </div>
   </template>
 <script lang="ts" setup>
+useHead({
+  link: [{ rel: 'preconnect', href: 'https://secured.sirvoy.com' }],
+})
+
 useSeo({
   title: 'Lakeside Cabin Extras | Camp Alta Kiruna',
   description: 'Book extra services and add-ons for your Lakeside Aurora Cabin stay at Camp Alta Kiruna. Enhance your premium lakefront experience in Swedish Lapland.',

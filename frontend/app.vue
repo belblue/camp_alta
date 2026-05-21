@@ -1,5 +1,5 @@
 <template>
-  <div class="body-color">
+  <div class="body-color overflow-x-hidden">
       <NuxtPage/>
       <CookieConsent/>
   </div>

@@ -69,6 +69,10 @@
   </section>
 </template>
 <script lang="ts" setup>
+useHead({
+  link: [{ rel: "preconnect", href: "https://camp-alta.checkfront.com" }],
+});
+
 useSeo({
   title: "Book Caravan & Motorhome Spot | Camp Alta Kiruna",
   description:

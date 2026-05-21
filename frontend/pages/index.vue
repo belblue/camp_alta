@@ -14,7 +14,6 @@
         loading="eager"
         fetchpriority="high"
         decoding="async"
-        preload
       />
     </section>
     <!-- <div class="">
@@ -134,7 +133,7 @@
         >
           <div class="">
             <div class="flex justify-center">
-              <img src="/index/index_3.webp" alt="" class="" />
+              <img src="/index/index_3.webp" alt="" class="" loading="lazy" decoding="async" />
             </div>
             <p class="text-xl mt-8 text-left mx-2">
               Nestled in the heart of Swedish Lapland, Camp Alta Kiruna is a
@@ -180,6 +179,8 @@
               src="/index/index_5.webp"
               alt=""
               class="object-cover md:ml-4 lg:ml-8"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </NuxtLink>
@@ -828,7 +829,7 @@
         >
           <div class="">
             <div class="flex justify-center">
-              <img src="/lakeside/lakeside.webp" alt="" class="" />
+              <img src="/lakeside/lakeside.webp" alt="" class="" loading="lazy" decoding="async" />
             </div>
             <p class="text-xl mt-8 text-left mx-2">
               Nestled in the heart of Swedish Lapland, Camp Alta Kiruna is a
@@ -878,6 +879,8 @@
               src="/lakeside/aurora.webp"
               alt="aurora"
               class="w-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </NuxtLink>

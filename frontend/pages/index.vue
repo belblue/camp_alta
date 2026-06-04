@@ -186,7 +186,7 @@
         </NuxtLink>
       </div>
       <div class="bg-bg2 lg:px-10 pb-10 lg:pb-10">
-        <NuxtLink to="/cabins"
+        <NuxtLink to="/Cabins"
           ><p class="title lg:text-9xl text-left ml-8">Cabins -</p></NuxtLink
         >
         <swiper
@@ -1485,6 +1485,7 @@
           <div class="my-3 md:mx-6 flex justify-center">
             <NuxtLink
               to="/FaQ#cabins"
+              aria-label="Frequently asked questions about cabins"
               class="px-7 py-3 rounded-[50px] bg-[#ffffffdb] w-full hover:text-white text-center shadow hover:bg-primary duration-600"
             >
               <div class="flex justify-center mb-6">

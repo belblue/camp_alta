@@ -281,7 +281,7 @@
                 <div class="px-2">
                     <p class="title-info">Need help with the booking? </p>                                         
                     <p class="line w-2/3 lg:w-1/3 ml-2"></p>      
-                    <p class="text-xl ml-2 pt-4">If you want help with your reservation, please contact us via email at info@campalta.se</p>    
+                    <p class="text-xl ml-2 pt-4">If you want help with your reservation, please contact us via email at <EmailLink /></p>    
                 </div>
             </div>
         </div>

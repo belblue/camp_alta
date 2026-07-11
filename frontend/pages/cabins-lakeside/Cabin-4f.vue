@@ -201,7 +201,7 @@
           To maintain affordable prices and to make our camp accessible to
           everyone, we are a self-cleaning camp. You are expected to restore
           your cabin to the same condition you found it in at your arrival or,
-          alternatively, you can order our cleaning service for a fee of 260
+          alternatively, you can order our cleaning service for a fee of 540
           SEK. Cleaning products are provided in the cabin.
         </p>
       </div>
@@ -390,7 +390,7 @@
           <p class="line w-2/3 lg:w-1/3 ml-2"></p>
           <p class="text-xl ml-2 pt-4">
             If you want help with your reservation, please contact us via email
-            at info@campalta.se
+            at <EmailLink />
           </p>
         </div>
       </div>

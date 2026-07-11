@@ -107,8 +107,8 @@
             </p>
             <p class="text-xl mt-4 text-left font-bold">Prices per person:</p>
             <ul class="ml-10 lg:ml-16 pt-4">
-              <li class="list-disc text-xl">Adult: 1600 SEK per person</li>
-              <li class="list-disc text-xl">Child: 800 SEK (6-12 years old)</li>
+              <li class="list-disc text-xl">Adult: 1650 SEK per person</li>
+              <li class="list-disc text-xl">Child: 830 SEK (6-12 years old)</li>
             </ul>
             <p class="text-xl mt-4 text-left">
               For larger groups, please contact us for special arrangements.
@@ -678,8 +678,8 @@ useHead({
       duration: 'PT6H',
       provider: { '@type': 'LodgingBusiness', name: 'Camp Alta Kiruna', url: 'https://campalta.net' },
       offers: [
-        { '@type': 'Offer', name: 'Northern Lights tour (adult)', price: '1600', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Northern Lights tour (child 6-12)', price: '800', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Northern Lights tour (adult)', price: '1650', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Northern Lights tour (child 6-12)', price: '830', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
       ],
       location: { '@type': 'Place', name: 'Abisko National Park', address: { '@type': 'PostalAddress', addressLocality: 'Abisko', addressCountry: 'SE' } },
     }),

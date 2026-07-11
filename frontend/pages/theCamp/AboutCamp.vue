@@ -1067,7 +1067,7 @@
           <p class="text-xl mt-4 text-left">
             For a more private experience, you can book our private sauna, which
             can accommodate 4 - 5 people. This sauna is available for free, and
-            you can order your bag of wood at the reception for 95SEK/ bag to
+            you can order your bag of wood at the reception for 110 SEK/ bag to
             heat the saunas during opening hours. Enjoy the perfect combination
             of relaxation and rejuvenation with our saunas!
           </p>

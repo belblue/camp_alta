@@ -31,7 +31,7 @@
                 </div>
                 <div v-if="error" class="max-w-2xl mx-auto bg-white border border-gray-200 rounded-lg p-6 my-10 text-center">
                     <p class="text-xl font-bold mb-2">Guest portal temporarily unavailable</p>
-                    <p class="text-gray-700">Sorry, it looks like there is a problem with our booking provider. You can contact us at <a href="mailto:info@campalta.se" class="text-primary font-bold underline">info@campalta.se</a> with your booking request. Sorry for the inconvenience.</p>
+                    <p class="text-gray-700">Sorry, it looks like there is a problem with our booking provider. You can contact us at <EmailLink link-class="text-primary font-bold underline" /> with your booking request. Sorry for the inconvenience.</p>
                 </div>
                 <div ref="widgetContainer"></div>
             </ClientOnly>

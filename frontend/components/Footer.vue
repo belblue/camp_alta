@@ -22,7 +22,7 @@
               stroke-width="30"
             />
           </svg>
-          info@campalta.se
+          <EmailLink />
         </p>
         <p class="flex m-4 text-xl">
           <img src="/phone.svg" alt="" class="h-6 pr-2 mt-1" />+46 (0) 706 529

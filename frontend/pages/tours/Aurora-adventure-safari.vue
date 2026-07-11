@@ -85,8 +85,8 @@
             </p>
             <p class="text-xl mt-4 text-left font-bold">Prices per person:</p>
             <ul class="ml-10 lg:ml-16 pt-4">
-              <li class="list-disc text-xl">Adult: 800 SEK per person</li>
-              <li class="list-disc text-xl">Child: 500 SEK (4-12 years old)</li>
+              <li class="list-disc text-xl">Adult: 850 SEK per person</li>
+              <li class="list-disc text-xl">Child: 530 SEK (4-12 years old)</li>
             </ul>
             <div class="grid justify-center mt-5">
               <NuxtLink
@@ -363,8 +363,8 @@ useHead({
       duration: 'PT2H',
       provider: { '@type': 'LodgingBusiness', name: 'Camp Alta Kiruna', url: 'https://campalta.net' },
       offers: [
-        { '@type': 'Offer', name: 'Aurora Adventure Safari (adult)', price: '800', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Aurora Adventure Safari (child 4-12)', price: '500', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Aurora Adventure Safari (adult)', price: '850', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Aurora Adventure Safari (child 4-12)', price: '530', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
       ],
       location: { '@type': 'Place', name: 'Camp Alta, Kiruna', address: { '@type': 'PostalAddress', streetAddress: 'Jullebovägen 2', addressLocality: 'Kiruna', postalCode: '981 92', addressCountry: 'SE' } },
     }),

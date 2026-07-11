@@ -97,17 +97,17 @@
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">2 people per snowmobile</p>
               <p class="text-xl">Adult</p>
-              <p class="text-xl">1500 SEK</p>
+              <p class="text-xl">1520 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">2 people per snowmobile</p>
               <p class="text-xl">Child</p>
-              <p class="text-xl">850 SEK</p>
+              <p class="text-xl">860 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">1 person per snowmobile</p>
               <p class="text-xl">Adult</p>
-              <p class="text-xl">1900 SEK</p>
+              <p class="text-xl">1920 SEK</p>
             </div>
           </div>
           <p class="text-center text-xl mt-4">
@@ -130,17 +130,17 @@
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">2 people per snowmobile</p>
               <p class="text-xl">Adult</p>
-              <p class="text-xl">1580 SEK</p>
+              <p class="text-xl">1620 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">2 people per snowmobile</p>
               <p class="text-xl">Child</p>
-              <p class="text-xl">960 SEK</p>
+              <p class="text-xl">900 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">1 person per snowmobile</p>
               <p class="text-xl">Adult</p>
-              <p class="text-xl">2100 SEK</p>
+              <p class="text-xl">2020 SEK</p>
             </div>
           </div>
           <p class="text-xl mt-4 text-primary font-bold">
@@ -158,17 +158,17 @@
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">2 people per snowmobile</p>
               <p class="text-xl">Adult</p>
-              <p class="text-xl">1550 SEK</p>
+              <p class="text-xl">1570 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">2 people per snowmobile</p>
               <p class="text-xl">Child</p>
-              <p class="text-xl">880 SEK</p>
+              <p class="text-xl">890 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">1 person per snowmobile</p>
               <p class="text-xl">Adult</p>
-              <p class="text-xl">1950 SEK</p>
+              <p class="text-xl">1970 SEK</p>
             </div>
           </div>
         </div>
@@ -186,11 +186,11 @@
           </div>
           <div class="grid grid-cols-2 text-center pb-3">
             <p class="text-xl">Adult</p>
-            <p class="text-xl">1600 SEK</p>
+            <p class="text-xl">1650 SEK</p>
           </div>
           <div class="grid grid-cols-2 text-center pb-3">
             <p class="text-xl">Child</p>
-            <p class="text-xl">800 SEK</p>
+            <p class="text-xl">830 SEK</p>
           </div>
         </div>
       </div>
@@ -208,23 +208,23 @@
           </div>
           <div class="grid grid-cols-3 text-center pb-3">
             <p class="text-xl">Lunch tour</p>
-            <p class="text-xl">1995 SEK</p>
-            <p class="text-xl">990 SEK</p>
+            <p class="text-xl">2095 SEK</p>
+            <p class="text-xl">1048 SEK</p>
           </div>
           <div class="grid grid-cols-3 text-center pb-3">
             <p class="text-xl">Coffee tour</p>
-            <p class="text-xl">1465 SEK</p>
-            <p class="text-xl">800 SEK</p>
+            <p class="text-xl">1525 SEK</p>
+            <p class="text-xl">768 SEK</p>
           </div>
           <div class="grid grid-cols-3 text-center pb-3">
             <p class="text-xl">Northern Lights tour</p>
-            <p class="text-xl">1580 SEK</p>
-            <p class="text-xl">800 SEK</p>
+            <p class="text-xl">1655 SEK</p>
+            <p class="text-xl">828 SEK</p>
           </div>
           <div class="grid grid-cols-3 text-center pb-3">
             <p class="text-xl">Evening tour</p>
-            <p class="text-xl">1495 SEK</p>
-            <p class="text-xl">748 SEK</p>
+            <p class="text-xl">1630 SEK</p>
+            <p class="text-xl">815 SEK</p>
           </div>
         </div>
       </div>
@@ -246,7 +246,7 @@
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Bed linen</p>
               <p class="text-xl">Pillow cover, bedsheet and duvet cover</p>
-              <p class="text-xl">70 SEK</p>
+              <p class="text-xl">80 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Towel</p>
@@ -258,7 +258,7 @@
               <p class="text-xl">
                 40L bag to use on the sauna or the fireplace.
               </p>
-              <p class="text-xl">100 SEK</p>
+              <p class="text-xl">110 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Washing machine rental</p>
@@ -273,7 +273,7 @@
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Private sauna rental</p>
               <p class="text-xl">Private sauna&grill with a bagof wood</p>
-              <p class="text-xl">350 SEK</p>
+              <p class="text-xl">400 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Child cot</p>
@@ -283,57 +283,57 @@
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Snow overall</p>
               <p class="text-xl">24 hours</p>
-              <p class="text-xl">200 SEK</p>
+              <p class="text-xl">210 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Snow overall</p>
               <p class="text-xl">Entire stay</p>
-              <p class="text-xl">350 SEK</p>
+              <p class="text-xl">360 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Snow boots</p>
               <p class="text-xl">24 hours</p>
-              <p class="text-xl">150 SEK</p>
+              <p class="text-xl">160 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Snow boots</p>
               <p class="text-xl">Entire stay</p>
-              <p class="text-xl">300 SEK</p>
+              <p class="text-xl">310 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Snow gloves</p>
               <p class="text-xl">24 hours</p>
-              <p class="text-xl">150 SEK</p>
+              <p class="text-xl">160 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Snow gloves</p>
               <p class="text-xl">Entire stay</p>
-              <p class="text-xl">300 SEK</p>
+              <p class="text-xl">310 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Winter hat</p>
               <p class="text-xl">24 hours</p>
-              <p class="text-xl">50 SEK</p>
+              <p class="text-xl">80 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Winter hat</p>
               <p class="text-xl">Entire stay</p>
-              <p class="text-xl">250 SEK</p>
+              <p class="text-xl">140 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Cross country skis/snowshoes</p>
               <p class="text-xl">3 hours</p>
-              <p class="text-xl">250 SEK</p>
+              <p class="text-xl">300 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Cross country skis/snowshoes</p>
               <p class="text-xl">Entire stay</p>
-              <p class="text-xl">500 SEK</p>
+              <p class="text-xl">600 SEK</p>
             </div>
             <div class="grid grid-cols-3 text-center pb-3">
               <p class="text-xl">Ice-fishing set</p>
               <p class="text-xl">3 hours</p>
-              <p class="text-xl">300 SEK</p>
+              <p class="text-xl">200 SEK</p>
             </div>
           </div>
         </div>
@@ -361,19 +361,19 @@
 
             <div class="grid grid-cols-2 text-center pb-3">
               <p class="text-xl">2A, 2B, 2C, D1, D2, D3</p>
-              <p class="text-xl">260 SEK</p>
+              <p class="text-xl">270 SEK</p>
             </div>
             <div class="grid grid-cols-2 text-center pb-3">
               <p class="text-xl">3, 4A, 4B, 4C, 4D, 5</p>
-              <p class="text-xl">510 SEK</p>
+              <p class="text-xl">540 SEK</p>
             </div>
             <div class="grid grid-cols-2 text-center pb-3">
               <p class="text-xl">6A, 6B, 6C</p>
-              <p class="text-xl">760 SEK</p>
+              <p class="text-xl">790 SEK</p>
             </div>
             <div class="grid grid-cols-2 text-center pb-3">
               <p class="text-xl">13A, 13B, 14</p>
-              <p class="text-xl">1890 SEK</p>
+              <p class="text-xl">1940 SEK</p>
             </div>
           </div>
         </div>
@@ -392,11 +392,11 @@
 
             <div class="grid grid-cols-2 text-center pb-3">
               <p class="text-xl">One way (up to 4 people)</p>
-              <p class="text-xl">450 SEK</p>
+              <p class="text-xl">500 SEK</p>
             </div>
             <div class="grid grid-cols-2 text-center pb-3">
               <p class="text-xl">One way (up to 5-8 people)</p>
-              <p class="text-xl">900 SEK</p>
+              <p class="text-xl">950 SEK</p>
             </div>
           </div>
         </div>

@@ -63,12 +63,12 @@
                             <p class="text-xl mt-4 text-left font-bold">Prices per person:</p>
                             <p class="text-xl mt-4 text-left">Two people sharing a snowmobile:</p>
                             <ul class="ml-10 lg:ml-16 pt-4">
-                                <li class="list-disc text-xl">Adult: 1500 SEK per person</li>
-                                <li class="list-disc text-xl">Child: 850 SEK (4-12 years old)</li>
+                                <li class="list-disc text-xl">Adult: 1520 SEK per person</li>
+                                <li class="list-disc text-xl">Child: 860 SEK (4-12 years old)</li>
                             </ul>
                             <p class="text-xl mt-4 text-left">One person on a snowmobile:</p>
                             <ul class="ml-10 lg:ml-16 pt-4">
-                                <li class="list-disc text-xl">Adult: 1900 SEK per person </li>
+                                <li class="list-disc text-xl">Adult: 1920 SEK per person </li>
                             </ul>
                             <p class="text-xl mt-4 text-left">This tour is suitable for both beginners and experienced riders. Our guides will provide all necessary equipment, training, and ensure your safety throughout the journey.</p>
 
@@ -395,11 +395,11 @@ useHead({
       duration: 'PT3H',
       provider: { '@type': 'LodgingBusiness', name: 'Camp Alta Kiruna', url: 'https://campalta.net' },
       offers: [
-        { '@type': 'Offer', name: 'Snowmobile tour - sharing (adult)', price: '1500', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Snowmobile tour - sharing (child 4-12)', price: '850', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Snowmobile tour - solo (adult)', price: '1900', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Snowmobile with lunch - sharing (adult)', price: '1580', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Snowmobile with Icehotel transfer - sharing (adult)', price: '1550', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Snowmobile tour - sharing (adult)', price: '1520', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Snowmobile tour - sharing (child 4-12)', price: '860', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Snowmobile tour - solo (adult)', price: '1920', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Snowmobile with lunch - sharing (adult)', price: '1620', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Snowmobile with Icehotel transfer - sharing (adult)', price: '1570', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
       ],
       location: { '@type': 'Place', name: 'Camp Alta, Kiruna', address: { '@type': 'PostalAddress', streetAddress: 'Jullebovägen 2', addressLocality: 'Kiruna', postalCode: '981 92', addressCountry: 'SE' } },
     }),

@@ -40,8 +40,8 @@
                             <p class="text-xl mt-4 text-left">Guests ride on a large sled driven by our guide. A tour of 2 – 3 hours, with a break in a beautiful place for coffee/tea and sandwiches over an open fire. A minimum of 2 people are required to start a tour, single occupants can always accompany a booked group.</p>
                             <p class="text-xl mt-4 text-left font-bold">Prices:</p>
                             <ul class="ml-10 lg:ml-16 pt-4">
-                                <li class="list-disc text-xl">1465 SEK per person</li>
-                                <li class="list-disc text-xl">800 SEK per child under 12 years</li>
+                                <li class="list-disc text-xl">1525 SEK per person</li>
+                                <li class="list-disc text-xl">768 SEK per child under 12 years</li>
                             </ul>
                             <p class="text-xl mt-4 text-left"><span class="font-bold">Timing:</span> 10:00</p>
                             <p class="text-xl mt-4 text-left"><span class="font-bold">Minimum age:</span> 6 years old</p>
@@ -76,8 +76,8 @@
                             <p class="text-xl mt-4 text-left">Guests can choose to share a 5-6 dog sled with another participant or drive their own sled with 3-4 dogs. When sharing a sled, one sits and the other drives the sled - you switch after the lunch stop. The tour takes about 4-5 hours (including transfer) with hot lunch. A minimum of 2 people are required to start a tour, single bookers can always join a booked group.</p>
                             <p class="text-xl mt-4 text-left font-bold">Prices:</p>
                             <ul class="ml-10 lg:ml-16 pt-4">
-                                <li class="list-disc text-xl">1995 SEK per person</li>
-                                <li class="list-disc text-xl">990 SEK per child under 12 years</li>
+                                <li class="list-disc text-xl">2095 SEK per person</li>
+                                <li class="list-disc text-xl">1048 SEK per child under 12 years</li>
                             </ul>
                             <p class="text-xl mt-4 text-left"><span class="font-bold">Timing:</span> 09:00</p>
                             <p class="text-xl mt-4 text-left"><span class="font-bold">Minimum age:</span> 9 years old</p>
@@ -114,8 +114,8 @@
                             <p class="text-xl mt-4 text-left">*from the 11th of March, chances to see auroras are low due to increased sun exposure.</p>
                             <p class="text-xl mt-4 text-left font-bold">Prices:</p>
                             <ul class="ml-10 lg:ml-16 pt-4">
-                                <li class="list-disc text-xl">1580 SEK per person (from March 11th to April 14th, price is 1495 SEK)</li>
-                                <li class="list-disc text-xl">800 SEK per child under 12 years (from March 11th to April 14th, price is 748 SEK) </li>
+                                <li class="list-disc text-xl">1655 SEK per person (from March 11th to April 14th, price is 1630 SEK)</li>
+                                <li class="list-disc text-xl">828 SEK per child under 12 years (from March 11th to April 14th, price is 815 SEK) </li>
                             </ul>
                             <p class="text-xl mt-4 text-left"><span class="font-bold">Timing:</span> 17:00</p>
                             <p class="text-xl mt-4 text-left"><span class="font-bold">Minimum age:</span> 6 years old</p>
@@ -365,7 +365,7 @@
 <script lang="ts" setup>
 useSeo({
   title: 'Dogsled Tour in Kiruna - Husky Sledding in Lapland | Camp Alta',
-  description: 'Experience dog sledding with Alaskan & Siberian Huskies in Jukkasjärvi. Choose from 2-3 hour coffee tour or 4-5 hour lunch tour. From 1465 SEK per person.',
+  description: 'Experience dog sledding with Alaskan & Siberian Huskies in Jukkasjärvi. Choose from 2-3 hour coffee tour or 4-5 hour lunch tour. From 1525 SEK per person.',
   path: '/tours/Dogsled-tour',
   image: '/tours/dogsled/dogsled_1b.webp',
 })
@@ -381,9 +381,9 @@ useHead({
       touristType: 'Adventure Tourism',
       provider: { '@type': 'LodgingBusiness', name: 'Camp Alta Kiruna', url: 'https://campalta.net' },
       offers: [
-        { '@type': 'Offer', name: 'Dog Sled Tour with Coffee (2-3h)', price: '1465', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Dog Sled Lunch Tour (4-5h)', price: '1995', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
-        { '@type': 'Offer', name: 'Northern Lights Dog Sled Tour (2-3h)', price: '1580', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Dog Sled Tour with Coffee (2-3h)', price: '1525', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Dog Sled Lunch Tour (4-5h)', price: '2095', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
+        { '@type': 'Offer', name: 'Northern Lights Dog Sled Tour (2-3h)', price: '1655', priceCurrency: 'SEK', availability: 'https://schema.org/InStock' },
       ],
       location: { '@type': 'Place', name: 'Jukkasjärvi, Swedish Lapland', address: { '@type': 'PostalAddress', addressLocality: 'Kiruna', addressCountry: 'SE' } },
     }),

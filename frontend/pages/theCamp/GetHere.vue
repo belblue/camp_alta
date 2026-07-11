@@ -139,7 +139,7 @@
             <div class="grid justify-center">
                 <NuxtLink to="/booking/Booking-tours" class="btn bg-primary mt-6 mb-6 text-xl py-2 px-20">Book here </NuxtLink>
             </div> 
-            <p class="text-xl mt-4 text-left">Contact us at info@campalta.se for group bookings that need a bus transfer.</p>
+            <p class="text-xl mt-4 text-left">Contact us at <EmailLink /> for group bookings that need a bus transfer.</p>
             <p class="text-xl mt-4 text-left">If you are looking into traveling in a group and don't want to bother with organizing the trip on your own, contact our partners <a target="_blank" href="https://www.90degreesnorth.se" class="text-blue-500">90degreesnorth AB</a> who organize tours from Stockholm to Camp Alta with the transportation, accommodation and all activities included.</p>
             </div>
         <div class="md:flex hidden mt-4 justify-center w-full h-full">

@@ -8,7 +8,7 @@
             <p class="text-xl mt-4 text-center ">Last update: 12-08-2023</p>
             <p class="text-xl mt-4 text-justify ">Owner of the portal: Alta Resorts AB</p>
             <p class="text-xl mt-4 text-justify ">Address: Jullebovägen 2, 981 92 Kiruna, Sweden</p>
-            <p class="text-xl mt-4 text-justify ">Contact:  info@campalta.se / +46 (0) 706 529 374</p>
+            <p class="text-xl mt-4 text-justify ">Contact:  <EmailLink /> / +46 (0) 706 529 374</p>
             <p class="text-xl mt-4 text-justify ">CIF</p>
             <p class="text-xl mt-4 text-justify ">All rights reserved.</p>
             <p class="title-init lg:text-6xl text-4xl text-center">- CONDITIONS OF ACCESS AND USE OF THE PORTAL -</p>

@@ -17,7 +17,7 @@
                 <li class="list-disc text-xl">Refusing analytics cookies when prompted</li>
             </ul>    
             <p class="title-init lg:text-6xl text-4xl text-center">Who is responsible for the processing of personal data?</p>
-            <p class="text-xl mt-4 text-justify ">Alta Resorts AB with C.I.F. 1234123 with address at Jullebovägen 2, 981 92 Kiruna, Sweden and email  info@campalta.se.</p>   
+            <p class="text-xl mt-4 text-justify ">Alta Resorts AB with C.I.F. 1234123 with address at Jullebovägen 2, 981 92 Kiruna, Sweden and email  <EmailLink />.</p>   
             <p class="title-init lg:text-6xl text-4xl text-center">For what purpose is personal data processed?</p>
             <ul class="ml-10 lg:ml-16 pt-4">
                     <li class="list-disc text-xl">Provide you with the requested service, manage the application and its database, as well as resolve incidents thereof.</li>

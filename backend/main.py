@@ -37,7 +37,13 @@ async def verify_recaptcha(token: str) -> bool:
             data={"secret": recaptcha_secret_key, "response": token},
         )
         result = response.json()
-        return result.get("success", False)
+        if not result.get("success", False):
+            print(f"[recaptcha] rejected: success=false, errors={result.get('error-codes')}")
+            return False
+        score = result.get("score", 0.0)
+        action = result.get("action", "")
+        print(f"[recaptcha] score={score} action={action}")
+        return score >= 0.3 and action == "submit"
 
 async def send_email(name: str, email: str, message: str):
     content = MIMEMultipart()

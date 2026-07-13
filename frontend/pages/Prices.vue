@@ -213,7 +213,7 @@
           </div>
           <div class="grid grid-cols-3 text-center pb-3">
             <p class="text-xl">Coffee tour</p>
-            <p class="text-xl">1525 SEK</p>
+            <p class="text-xl">1535 SEK</p>
             <p class="text-xl">768 SEK</p>
           </div>
           <div class="grid grid-cols-3 text-center pb-3">

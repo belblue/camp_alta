@@ -440,13 +440,10 @@ let winter = ref(true);
 function changeSeason(winter: boolean) {
   //console.log(transport)
   //return transport
-  console.log(winter);
   if (winter == false) {
     season.value = "summer";
-    console.log(winter);
   } else {
     season.value = "winter";
-    console.log(winter);
   }
 }
 

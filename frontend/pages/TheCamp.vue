@@ -257,7 +257,6 @@ function showTransport(transport: string){
     train.value=false
     car.value=false
     plane.value=false
-    console.log(transport);
     if (transport=='train'){
         train.value=true
 

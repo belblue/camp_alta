@@ -16,7 +16,6 @@
     const router = useRouter();
 
     async function onChange(local) {
-        console.log('change')
         router.push(`/${local}`)      
     }
 </script>

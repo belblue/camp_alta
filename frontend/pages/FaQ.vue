@@ -976,7 +976,6 @@ function acc() {
 
     accordionItems.forEach((item) => {
         let header = item.querySelector(".accordion-header") as HTMLElement;
-        console.log('una vez')
         header.addEventListener("click", () => {
             item.classList.toggle("active");
         });

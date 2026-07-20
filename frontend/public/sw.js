@@ -1,7 +1,5 @@
-const CACHE_VERSION = '2026052002'; // Update this to bust cache
-const CACHE_NAME = `camp-alta-v${CACHE_VERSION}`;
+const CACHE_VERSION = '2026072001'; // Update this to bust cache
 const STATIC_CACHE = `camp-alta-static-v${CACHE_VERSION}`;
-const DYNAMIC_CACHE = `camp-alta-dynamic-v${CACHE_VERSION}`;
 
 // Assets to cache immediately
 const STATIC_ASSETS = [
@@ -44,23 +42,21 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate event - clean up ALL old caches
+// Activate event - delete caches from previous versions only, no forced
+// reload: open pages keep running and pick up the new caches naturally.
 self.addEventListener('activate', event => {
+  const expectedCaches = [
+    STATIC_CACHE,
+    ...Object.values(CACHE_STRATEGIES).map(strategy => strategy.cacheName)
+  ];
   event.waitUntil(
     caches.keys()
-      .then(cacheNames => {
-        // Delete ALL existing caches to force complete refresh
-        return Promise.all(
-          cacheNames.map(cacheName => caches.delete(cacheName))
-        );
-      })
-      .then(() => {
-        self.clients.claim();
-        // Force all pages to reload
-        return self.clients.matchAll().then(clients => {
-          clients.forEach(client => client.navigate(client.url));
-        });
-      })
+      .then(cacheNames => Promise.all(
+        cacheNames
+          .filter(cacheName => cacheName.startsWith('camp-alta-') && !expectedCaches.includes(cacheName))
+          .map(cacheName => caches.delete(cacheName))
+      ))
+      .then(() => self.clients.claim())
   );
 });
 
@@ -95,9 +91,9 @@ async function cacheFirst(request) {
   const response = await fetch(request);
   if (response.status === 200) {
     const cache = await getCacheForRequest(request);
-    cache.put(request, response.clone());
+    cache.put(request, await stampCacheTime(response));
   }
-  
+
   return response;
 }
 
@@ -107,7 +103,7 @@ async function networkFirst(request) {
     const response = await fetch(request);
     if (response.status === 200) {
       const cache = await getCacheForRequest(request);
-      cache.put(request, response.clone());
+      cache.put(request, await stampCacheTime(response));
     }
     return response;
   } catch (error) {
@@ -117,6 +113,19 @@ async function networkFirst(request) {
     }
     throw error;
   }
+}
+
+// Copy of a response with an sw-cache-time header so cleanupCache can
+// age-evict entries. Safe: cross-origin (opaque) responses never get here.
+async function stampCacheTime(response) {
+  const headers = new Headers(response.headers);
+  headers.set('sw-cache-time', Date.now().toString());
+  const body = await response.clone().blob();
+  return new Response(body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers
+  });
 }
 
 // Get appropriate cache for request

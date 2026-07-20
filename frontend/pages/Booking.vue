@@ -59,8 +59,6 @@
     </section>
 </template>
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
-
 useHead({
   link: [{ rel: 'preconnect', href: 'https://camp-alta.checkfront.com' }],
 })
@@ -72,85 +70,14 @@ useSeo({
   image: '/header/header_aboutcamp.webp',
 })
 
-const loading = ref(true)
-const error = ref(false)
-const widgetContainer = ref<HTMLElement | null>(null)
-let fallbackTimer: number | undefined
-let observer: MutationObserver | undefined
-
-declare const DROPLET: any
-
-onMounted(() => {
-  nextTick(() => {
-  const container = widgetContainer.value
-  if (!container) return
-
-  const trackClarity = (event: string) => {
-    const w = window as any
-    if (typeof w.clarity === 'function') {
-      w.clarity('event', event)
-      w.clarity('set', 'last_booking_event', event)
-    }
-  }
-
-  const finish = () => {
-    loading.value = false
-    observer?.disconnect()
-    if (fallbackTimer) clearTimeout(fallbackTimer)
-    trackClarity('booking_widget_loaded_main')
-  }
-
-  const fail = () => {
-    loading.value = false
-    error.value = true
-    observer?.disconnect()
-    if (fallbackTimer) clearTimeout(fallbackTimer)
-    trackClarity('booking_widget_failed_main')
-  }
-
-  const checkContent = () => {
-    const hasContent = Array.from(container.children).some(
-      (el) => el.id !== 'CHECKFRONT_LOADER' && el.tagName !== 'SCRIPT'
-    )
-    if (hasContent) {
-      finish()
-      return true
-    }
-    return false
-  }
-
-  observer = new MutationObserver(() => { checkContent() })
-  observer.observe(container, { childList: true, subtree: true })
-
-  fallbackTimer = window.setTimeout(() => {
-    if (!checkContent()) fail()
-  }, 15000)
-
-  const script = document.createElement('script')
-  script.src = '//camp-alta.checkfront.com/lib/interface--0.js'
-  script.type = 'text/javascript'
-  script.async = true
-  script.onerror = fail
-  script.onload = () => {
-    try {
-      new DROPLET.Widget({
-        host: 'camp-alta.checkfront.com',
-        target: 'CHECKFRONT_WIDGET_01',
-        options: 'category_select',
-        category_id: '2,3,7,6,4,9',
-        provider: 'droplet',
-      }).render()
-      requestAnimationFrame(() => { checkContent() })
-    } catch (e) {
-      fail()
-    }
-  }
-  document.head.appendChild(script)
-  })
-})
-
-onBeforeUnmount(() => {
-  if (fallbackTimer) clearTimeout(fallbackTimer)
-  observer?.disconnect()
+const { loading, error, widgetContainer } = useBookingWidget({
+  provider: 'checkfront',
+  trackingTag: 'booking_widget',
+  events: { loaded: 'booking_widget_loaded_main', failed: 'booking_widget_failed_main' },
+  widgetOptions: {
+    options: 'category_select',
+    category_id: '2,3,7,6,4,9',
+    provider: 'droplet',
+  },
 })
 </script>

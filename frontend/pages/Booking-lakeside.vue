@@ -43,8 +43,6 @@
   </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
-
 useHead({
   link: [{ rel: 'preconnect', href: 'https://secured.sirvoy.com' }],
 })
@@ -56,72 +54,10 @@ useSeo({
   image: '/lakeside/general/gen_9.webp',
 })
 
-const loading = ref(true)
-const error = ref(false)
-const widgetContainer = ref<HTMLElement | null>(null)
-let fallbackTimer: number | undefined
-let observer: MutationObserver | undefined
-
-onMounted(() => {
-  nextTick(() => {
-    const container = widgetContainer.value
-    if (!container) return
-
-    const trackClarity = (event: string) => {
-      const w = window as any
-      if (typeof w.clarity === 'function') {
-        w.clarity('event', event)
-        w.clarity('set', 'last_booking_event', event)
-      }
-    }
-
-    const finish = () => {
-      loading.value = false
-      observer?.disconnect()
-      if (fallbackTimer) clearTimeout(fallbackTimer)
-      trackClarity('booking_widget_loaded_lakeside')
-    }
-
-    const fail = () => {
-      loading.value = false
-      error.value = true
-      observer?.disconnect()
-      if (fallbackTimer) clearTimeout(fallbackTimer)
-      trackClarity('booking_widget_failed_lakeside')
-    }
-
-    const checkIframe = () => {
-      const iframe = container.querySelector('iframe') as HTMLIFrameElement | null
-      if (!iframe) return false
-      if (iframe.contentDocument?.readyState === 'complete') {
-        finish()
-      } else {
-        iframe.addEventListener('load', finish, { once: true })
-        observer?.disconnect()
-      }
-      return true
-    }
-
-    observer = new MutationObserver(() => { checkIframe() })
-    observer.observe(container, { childList: true, subtree: true })
-
-    const script = document.createElement('script')
-    script.src = 'https://secured.sirvoy.com/widget/sirvoy.js'
-    script.async = true
-    script.setAttribute('data-form-id', '80bf61cb7ac6ed2e')
-    script.onerror = fail
-    container.appendChild(script)
-
-    requestAnimationFrame(() => { checkIframe() })
-
-    fallbackTimer = window.setTimeout(() => {
-      if (!checkIframe()) fail()
-    }, 15000)
-  })
-})
-
-onBeforeUnmount(() => {
-  if (fallbackTimer) clearTimeout(fallbackTimer)
-  observer?.disconnect()
+const { loading, error, widgetContainer } = useBookingWidget({
+  provider: 'sirvoy',
+  trackingTag: 'booking_widget',
+  events: { loaded: 'booking_widget_loaded_lakeside', failed: 'booking_widget_failed_lakeside' },
+  formId: '80bf61cb7ac6ed2e',
 })
 </script>

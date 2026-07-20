@@ -1,14 +1,18 @@
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
-type CheckfrontOptions = {
-  provider: 'checkfront'
+type BaseOptions = {
   trackingTag: string
+  /** Override the Clarity event names (defaults: `${trackingTag}_loaded` / `${trackingTag}_failed`) */
+  events?: { loaded: string; failed: string }
+}
+
+type CheckfrontOptions = BaseOptions & {
+  provider: 'checkfront'
   widgetOptions: Record<string, string>
 }
 
-type SirvoyOptions = {
+type SirvoyOptions = BaseOptions & {
   provider: 'sirvoy'
-  trackingTag: string
   formId: string
   dataWidget?: string
 }
@@ -41,7 +45,7 @@ export function useBookingWidget(opts: WidgetOptions) {
         loading.value = false
         observer?.disconnect()
         if (fallbackTimer) clearTimeout(fallbackTimer)
-        trackClarity(`${opts.trackingTag}_loaded`)
+        trackClarity(opts.events?.loaded ?? `${opts.trackingTag}_loaded`)
       }
 
       const fail = () => {
@@ -49,9 +53,10 @@ export function useBookingWidget(opts: WidgetOptions) {
         error.value = true
         observer?.disconnect()
         if (fallbackTimer) clearTimeout(fallbackTimer)
-        trackClarity(`${opts.trackingTag}_failed`)
+        trackClarity(opts.events?.failed ?? `${opts.trackingTag}_failed`)
       }
 
+      // Checkfront renders inline content into the container
       const checkContent = () => {
         const hasContent = Array.from(container.children).some(
           (el) => el.id !== 'CHECKFRONT_LOADER' && el.tagName !== 'SCRIPT'
@@ -63,11 +68,26 @@ export function useBookingWidget(opts: WidgetOptions) {
         return false
       }
 
-      observer = new MutationObserver(() => { checkContent() })
+      // Sirvoy renders an iframe; wait for it to finish loading
+      const checkIframe = () => {
+        const iframe = container.querySelector('iframe') as HTMLIFrameElement | null
+        if (!iframe) return false
+        if (iframe.contentDocument?.readyState === 'complete') {
+          finish()
+        } else {
+          iframe.addEventListener('load', finish, { once: true })
+          observer?.disconnect()
+        }
+        return true
+      }
+
+      const checkReady = opts.provider === 'sirvoy' ? checkIframe : checkContent
+
+      observer = new MutationObserver(() => { checkReady() })
       observer.observe(container, { childList: true, subtree: true })
 
       fallbackTimer = window.setTimeout(() => {
-        if (!checkContent()) fail()
+        if (!checkReady()) fail()
       }, 15000)
 
       if (opts.provider === 'sirvoy') {
@@ -78,7 +98,7 @@ export function useBookingWidget(opts: WidgetOptions) {
         if (opts.dataWidget) script.setAttribute('data-widget', opts.dataWidget)
         script.onerror = fail
         container.appendChild(script)
-        requestAnimationFrame(() => { checkContent() })
+        requestAnimationFrame(() => { checkReady() })
       } else {
         const script = document.createElement('script')
         script.src = '//camp-alta.checkfront.com/lib/interface--0.js'
@@ -92,7 +112,7 @@ export function useBookingWidget(opts: WidgetOptions) {
               target: 'CHECKFRONT_WIDGET_01',
               ...opts.widgetOptions,
             }).render()
-            requestAnimationFrame(() => { checkContent() })
+            requestAnimationFrame(() => { checkReady() })
           } catch (e) {
             fail()
           }

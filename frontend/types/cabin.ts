@@ -57,7 +57,10 @@ export interface CampCabin extends CabinBase {
 
 export interface LakesideCabin extends CabinBase {
   heroCarousel: { id: string; images: CabinImage[] }
+  /** Linen / self-cleaning paragraphs rendered BEFORE the booking CTA
+   * (in the lakeside skeleton `outro` only holds post-CTA paragraphs) */
+  preCtaParagraphs: string[]
   bookCtaClass: string
-  extrasCta?: { label: string; to: string; class: string }
-  gettingHere: { mapsUrl: string; mapsLinkClass: string }
+  extrasCta: { label: string; to: string; class: string }
+  gettingHere: { mapsUrl: string; receptionMapsUrl: string; mapsLinkClass: string }
 }

@@ -1,5 +1,33 @@
 //const{i18nOptions} =require('./locales/nuxt-i18n-config')
 
+import { readdirSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+// Cache headers for server-rendered HTML pages, generated from the pages/
+// directory so new pages and folders are picked up automatically:
+// directories -> /<name>/**, index.vue -> /, other .vue files -> /<Name>.
+// Deliberately NOT a /** fallback: that would override the long-cache header
+// set by server/plugins/cache-static-assets.ts on files in /public and add
+// caching to files its regex skips (sitemap.xml, robots.txt, llms*.txt, ...).
+const HTML_CACHE = {
+  headers: { "cache-control": "public, max-age=3600, s-maxage=7200" },
+};
+
+function pageCacheRules() {
+  const pagesDir = fileURLToPath(new URL("./pages", import.meta.url));
+  const rules: Record<string, typeof HTML_CACHE> = {};
+  for (const entry of readdirSync(pagesDir, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      rules[`/${entry.name}/**`] = HTML_CACHE;
+    } else if (entry.name === "index.vue") {
+      rules["/"] = HTML_CACHE;
+    } else if (entry.name.endsWith(".vue")) {
+      rules[`/${entry.name.replace(/\.vue$/, "")}`] = HTML_CACHE;
+    }
+  }
+  return rules;
+}
+
 export default defineNuxtConfig({
   typescript: {
     shim: false,
@@ -25,86 +53,8 @@ export default defineNuxtConfig({
       // Only apply cache headers in production
       ...(process.env.NODE_ENV === "production"
         ? {
-            // HTML pages - short cache for freshness
-            "/": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/cabins/**": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/tours/**": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/theCamp/**": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-
-            // HTML pages - top-level PascalCase routes (actual paths in pages/)
-            "/Cabins": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/TheCamp": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/Tours": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/Prices": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/Booking": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/Booking-lakeside": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/FaQ": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/LakesideAuroraCabins": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-
-            // HTML pages - sub-route folders
-            "/booking/**": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/cabins-lakeside/**": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
-            "/docs/**": {
-              headers: {
-                "cache-control": "public, max-age=3600, s-maxage=7200",
-              },
-            },
+            // HTML pages - short cache for freshness, generated from pages/
+            ...pageCacheRules(),
 
             // API routes - very short cache
             "/api/**": {
@@ -135,7 +85,7 @@ export default defineNuxtConfig({
             },
             // No /** fallback: it would override the long-cache header set by
             // server/plugins/cache-static-assets.ts on files in /public. New
-            // page routes must be listed explicitly above.
+            // page routes are picked up automatically by pageCacheRules().
           }
         : {
             // Dev mode - no caching

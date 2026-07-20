@@ -5,6 +5,7 @@ module.exports = {
     //"./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
+    "./data/**/*.ts", // cabin page data holds class strings (e.g. lg:w-1/12)
     "./nuxt.config.{js,ts}",
     "./app.vue",
     "./error.vue",

@@ -1875,7 +1875,12 @@ useHead({
         ],
         sameAs: [
           "https://www.tripadvisor.com/Hotel_Review-g189815-d944749-Reviews-Camp_Alta-Kiruna_Norrbotten_County.html",
+          "https://www.instagram.com/campalta_kiruna",
+          "https://www.facebook.com/campalta",
         ],
+        tourBookingPage: "https://campalta.net/booking/Booking-tours",
+        accommodationBookingPage:
+          "https://campalta.net/booking/Booking-cabins",
       }),
     },
   ],

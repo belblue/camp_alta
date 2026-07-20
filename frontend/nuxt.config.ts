@@ -178,14 +178,6 @@ export default defineNuxtConfig({
         { name: "geo.position", content: "67.855800;20.225282" },
         { name: "ICBM", content: "67.855800, 20.225282" },
 
-        // Cache optimization meta tags
-        { "http-equiv": "Cache-Control", content: "public, max-age=3600" },
-        { "http-equiv": "Pragma", content: "public" },
-        {
-          "http-equiv": "Expires",
-          content: new Date(Date.now() + 3600000).toUTCString(),
-        },
-
         // Open Graph tags for social media
         { property: "og:type", content: "website" },
         {
@@ -376,27 +368,9 @@ export default defineNuxtConfig({
                 })();
               `,
         },
-        // Juicer and reCAPTCHA are now lazy-loaded on the pages that need them
-        {
-          type: "text/javascript",
-          src: "//camp-alta.checkfront.com/lib/interface--0.js",
-          defer: true,
-        },
-        {
-          type: "text/javascript",
-          src: "https://www.jscache.com/wejs?wtype=excellent&amp;uniq=250&amp;locationId=944749&amp;lang=en_US&amp;display_version=2",
-          defer: true,
-        },
-        {
-          type: "text/javascript",
-          src: "https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=792&amp;locationId=944749&amp;lang=en_US&amp;border=true&amp;display_version=2",
-          defer: true,
-        },
-        {
-          type: "text/javascript",
-          src: "https://www.jscache.com/wejs?wtype=cdsscrollingravenarrow&amp;uniq=166&amp;locationId=944749&amp;lang=sv&amp;border=true&amp;display_version=2",
-          defer: true,
-        },
+        // Third-party widget scripts are lazy-loaded on the pages that need
+        // them: Checkfront by the booking pages (useBookingWidget / inline),
+        // TripAdvisor review widgets by pages/Cabins.vue.
         {
           type: "text/javascript",
           innerHTML: `
@@ -443,59 +417,8 @@ export default defineNuxtConfig({
               })();
             `,
         },
-        {
-          type: "application/ld+json",
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LodgingBusiness",
-            name: "Camp Alta Kiruna",
-            description:
-              "Arctic wilderness camp offering cozy cabins and adventure tours including snowmobile, dogsled, and Northern Lights experiences in Swedish Lapland.",
-            url: "https://campalta.net",
-            image: "https://campalta.net/index/index_3.webp",
-            logo: "https://campalta.net/logo.svg",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Jullebovägen 2",
-              addressLocality: "Kiruna",
-              postalCode: "981 92",
-              addressCountry: "SE",
-              addressRegion: "Norrbotten",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 67.8558,
-              longitude: 20.225282,
-            },
-            contactPoint: {
-              "@type": "ContactPoint",
-              telephone: "+46-706-529-374",
-              contactType: "reservations",
-              email: "info@campalta.se",
-            },
-            openingHours: "Mo-Su 00:00-24:00",
-            sameAs: [
-              "https://www.instagram.com/campalta_kiruna",
-              "https://www.facebook.com/campalta",
-            ],
-            amenityFeature: [
-              { "@type": "LocationFeatureSpecification", name: "Cabins" },
-              { "@type": "LocationFeatureSpecification", name: "Sauna" },
-              {
-                "@type": "LocationFeatureSpecification",
-                name: "Kitchen facilities",
-              },
-              {
-                "@type": "LocationFeatureSpecification",
-                name: "Shared bathrooms",
-              },
-              { "@type": "LocationFeatureSpecification", name: "Parking" },
-            ],
-            tourBookingPage: "https://campalta.net/booking/Booking-tours",
-            accommodationBookingPage:
-              "https://campalta.net/booking/Booking-cabins",
-          }),
-        },
+        // LodgingBusiness JSON-LD lives on the home page (pages/index.vue),
+        // the canonical entity page — do not duplicate it here.
       ],
     },
   },

@@ -16,54 +16,12 @@
         decoding="async"
       />
     </section>
-    <!-- <div class="">
-            <div class="background-carousel ">
-                
-                <div class="carousel-overlay"></div>
-                <swiper                             
-                    :modules="[ Autoplay, Lazy]"
-                    :rewind="true"
-                    :lazy="true"
-                    :navigation="false"
-                    :autoplay="{ delay: 5000 }"
-                    >
-                    
-                    <swiper-slide class="">                                           
-                        <img src="/index/index_2.webp" alt="" class="carousel-image" loading="lazy">  
-                    </swiper-slide>   
-                    <swiper-slide class="">                                           
-                        <img src="/index/index_1.webp" alt="" class="carousel-image" loading="lazy"> 
-                    </swiper-slide>   
-                </swiper>
-            </div>
-        </div>-->
-
     <!--to top-->
     <span id="top"></span>
     <ToTop />
     <div class="">
       <div class="p-0 absolute top-0 h-screen w-full z-10">
         <Navbar />
-        <!-- <div class="h-full flex flex-col justify-center items-center text-center">
-                    <p class="title-init lg:text-9xl md:text-8xl text-6xl text-white ">Artic wilderness camp</p>
-                    <div class="hidden lg:grid lg:grid-cols-2 bg-white border-white border-2 rounded-3xl text-black w-1/4">
-                        <div class="dropdown inline-block relative  ">
-                             
-                            <NuxtLink class="uppercase p-3  inline-flex items-center" to="/booking/Booking-cabins">
-                            <span class="mr-1 font-bold">Cabins</span>
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-                            </NuxtLink>
-                            <ul class="dropdown-menu absolute hidden text-gray-700 bg-bg1 rounded-3xl w-full">
-                                <li class=""><NuxtLink class="font-bold hover:bg-[#00849234] py-2 px-4 block whitespace-no-wrap" to="/booking/Booking-tours">Tours</NuxtLink></li>
-                                <li class=""><NuxtLink class="font-bold rounded-b-2xl  hover:bg-[#00849234] py-2 px-4 block whitespace-no-wrap" to="/booking/Booking-cabins">Services</NuxtLink></li>
-                                <li class=""><NuxtLink class="font-bold rounded-t-2xl  hover:bg-[#00849234] py-2 px-4 block whitespace-no-wrap" to="/booking/Booking-cabins">Cabins</NuxtLink></li>
-
-                            </ul>                   
-                        </div>
-                        <NuxtLink class="bg-primary text-white  rounded-3xl ml-2 p-3 font-bold" to="/Booking">Book here</NuxtLink>
-                    </div>
-                    <NuxtLink class=" lg:hidden bg-white text-black rounded-br-2xl rounded-tr-2xl rounded-3xl ml-2 p-3 font-bold" to="/Booking">Book here</NuxtLink>
-                </div>-->
         <div
           class="h-full flex flex-col justify-between items-center text-center relative"
         >
@@ -1103,23 +1061,6 @@
           </swiper-slide>
         </swiper>
       </div>
-      <!-- <div class="bg-bg2 lg:px-10 pb-10 lg:pb-20">
-                <p class="title lg:text-9xl text-center">- Discover -</p>
-                <p class="text-4xl text-center">Europe's Last Great Wilderness</p>
-                <div class="zoom-container  mt-4" style="max-width: 100%;">
-                    <video class="zoom-video"  autoplay="true" >
-                        <source src="banner.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>-->
-      <!--
-                    video?
-                    <div class="dinamic-video overflow-hidden w-full mx-auto mt-16" style="width: 100%;">
-                    <video class="h-screen w-screen  object-cover" autoplay >
-                        <source src="banner.mp4" type="video/mp4">
-                    </video>
-                </div>-->
-
       <!-- Guest Reviews Section -->
       <div class="lg:px-10 pb-10 lg:pb-20 min-h-[70vh] relative" id="Reviews">
         <img
@@ -1659,34 +1600,6 @@
             </div>
           </div>
           <ContactForm />
-          <!-- <div class="pb-3 ">
-                        <div class="grid lg:grid-cols-2 md:grid-cols-2">
-                            <div class="lg:mx-12 mx-2">
-                                <label for="name" class="text-xl pl-1">Name</label><br>
-                                <input type="text" name="name" id="name" class="w-full mt-2 rounded-2xl shadow hover:border-[1px] hover:border-[#007984] outline-0 px-3 py-1">
-                            </div>
-                            <div class="lg:mx-12 mx-2">
-                                <label for="email" class="text-xl pl-1">Email</label><br>
-                                <input type="text" name="email" id="email" class="w-full mt-2 rounded-2xl border-black shadow hover:border-[1px] hover:border-[#007984] outline-0 px-3 py-1">
-
-                            </div>
-                        </div>      
-                        <div class="lg:mx-12  mt-6 mx-2">
-                            <label for="message" class="text-xl pl-1">Message</label><br>
-                            <textarea name="message" id="message" cols="30" rows="10" class="w-full mt-2 rounded-2xl shadow  hover:border-[1px] hover:border-[#007984] outline-0 px-3 py-1"></textarea>
-                        </div>                 
-                        <div class="grid justify-center mt-4">
-                            <button v-if="sending==true" class="btn bg-primary disabled" ><img src="/hamburger.svg" alt="abrir menu">Sending...</button>
-                            <button v-else @click="sendForm()" class="btn bg-primary flex">
-                                <img src="/email.svg" alt="" class="w-6 mr-3 pt-[2px]">
-                                Send
-                            </button>
-                        </div>
-                    </div>                                   
-                   <div>
-                        <recaptcha v-model="recaptchaResponse"></recaptcha>
-                        <button @click="submitForm">Submit</button>
-                    </div>-->
         </div>
       </div>
       <Footer />
@@ -1702,7 +1615,10 @@ useSeo({
   image: "/index/index_1.webp",
 });
 
-const heroPreloadHref = (() => {
+// Seasonal hero image, shared by the preload link and the <NuxtImg> src.
+// Summer (1 April - 14 September): index_1.webp; winter otherwise.
+// Plain const, not computed: the value only depends on the request date.
+const heroImageSrc = (() => {
   const today = new Date();
   const m = today.getMonth() + 1;
   const d = today.getDate();
@@ -1714,7 +1630,7 @@ useHead({
   link: [
     {
       rel: "preload",
-      href: heroPreloadHref,
+      href: heroImageSrc,
       as: "image",
       type: "image/webp",
       fetchpriority: "high",
@@ -1886,28 +1802,13 @@ useHead({
   ],
 });
 
-import { onMounted, onUnmounted, computed } from "vue";
+import { onMounted, onUnmounted } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Autoplay, Pagination, Keyboard, Lazy } from "swiper";
 import "swiper/css";
 import "swiper/css/lazy";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-const sending = ref(false);
-
-// Computed property to determine hero image based on current date
-// Summer (April 1 - September 14): index_1.webp
-// Winter (September 15 - March 31): index_2.webp
-const heroImageSrc = computed(() => {
-  const today = new Date();
-  const month = today.getMonth() + 1;
-  const day = today.getDate();
-
-  const isSummer = (month >= 4 && month <= 8) || (month === 9 && day < 15);
-
-  return isSummer ? "/index/index_1.webp" : "/index/index_2.webp";
-});
 
 let ticking = false;
 function parallax() {
@@ -1928,30 +1829,6 @@ function parallax() {
   }
 }
 
-let currentWidth = 20;
-
-function handleScroll(event: Event) {
-  const scrollPosition = window.scrollY;
-  const windowHeight = window.innerHeight;
-  const image = document.querySelector(".zoom-video") as HTMLElement;
-  const container = document.querySelector(".zoom-container") as HTMLElement;
-  const containerTop = container.offsetTop;
-  const containerHeight = container.offsetHeight;
-  const containerBottom = containerTop + containerHeight;
-
-  if (
-    scrollPosition + windowHeight > containerTop &&
-    scrollPosition < containerBottom
-  ) {
-    const newWidth =
-      20 + ((scrollPosition - containerTop) / containerHeight) * 80;
-    // Make sure the new width is within a reasonable range
-    currentWidth = Math.min(Math.max(newWidth, 20), 100);
-    // Apply the new width to the image
-    image.style.width = `${currentWidth}%`;
-  }
-}
-
 onMounted(() => {
   window.addEventListener("scroll", parallax, { passive: true });
 });
@@ -1960,29 +1837,3 @@ onUnmounted(() => {
   window.removeEventListener("scroll", parallax);
 });
 </script>
-<style>
-.background-carousel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensure it stays behind other content */
-  overflow: hidden;
-}
-
-.carousel-image {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-.carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black filter with 50% opacity */
-  z-index: 1; /* Ensure the overlay is above the images but below the navbar */
-}
-</style>

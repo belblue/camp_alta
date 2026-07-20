@@ -636,46 +636,27 @@ onUnmounted(() => {
   window.removeEventListener("scroll", parallax);
 });
 
-// Function to load TripAdvisor widgets
+// Inject the TripAdvisor wejs widget scripts. Each locates its container
+// div by id (#TA_cdsscrollingravenarrow166 / #TA_cdsratingsonlynarrow792),
+// which exists by the time onMounted runs. The static links inside the
+// containers remain as the fallback if TripAdvisor fails to load.
+const TRIPADVISOR_WIDGETS = [
+  "https://www.jscache.com/wejs?wtype=cdsscrollingravenarrow&uniq=166&locationId=944749&lang=sv&border=true&display_version=2",
+  "https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&uniq=792&locationId=944749&lang=en_US&border=true&display_version=2",
+];
+
 const loadTripAdvisorWidgets = () => {
-  try {
-    // Check if TripAdvisor script is already loaded
-    if (window.readyToLoadTA) {
-      return;
-    }
+  for (const src of TRIPADVISOR_WIDGETS) {
+    // Guard against double-injection on repeated client-side navigation
+    if (document.querySelector(`script[src="${src}"]`)) continue;
 
-    // Create and load TripAdvisor script
     const script = document.createElement("script");
-    script.src = "https://www.jscript.tripadvisor.com/ta_js/ta_js.js";
+    script.src = src;
     script.async = true;
-    script.onload = () => {
-      // Initialize TripAdvisor widgets after script loads
-      if (window.taInitialized) {
-        return;
-      }
-
-      window.taInitialized = true;
-
-      // Initialize the widgets
-      setTimeout(() => {
-        try {
-          if (window.TripAdvisor && window.TripAdvisor.refresh) {
-            window.TripAdvisor.refresh();
-          }
-        } catch (error) {
-          console.warn("TripAdvisor widget initialization error:", error);
-        }
-      }, 1000);
-    };
-
     script.onerror = () => {
-      console.warn("Failed to load TripAdvisor script");
+      console.warn("Failed to load TripAdvisor widget:", src);
     };
-
-    document.head.appendChild(script);
-    window.readyToLoadTA = true;
-  } catch (error) {
-    console.error("Error loading TripAdvisor widgets:", error);
+    document.body.appendChild(script);
   }
 };
 </script>

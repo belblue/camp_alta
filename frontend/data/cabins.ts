@@ -1107,6 +1107,97 @@ const fragment2: CampCabin[] = [
       amenities: ["WiFi", "Heating", "Fridge", "Microwave", "TV"],
     },
   },
+  // Glass cabin: the only camp cabin with no kitchenette and no in-cabin WC —
+  // both are in the common service building 90 m away (other camp cabins are 20 m).
+  // It is also the only one where bed linen and towels are INCLUDED, so its
+  // `outro` has no linen-rental paragraph and its cleaning fee is 240 SEK.
+  {
+    slug: "Glass-cabin",
+    heading: "Glass cabin",
+    titleLineClass: "line w-1/2 lg:w-1/12",
+    intro: [
+      "Hidden among the trees at Camp Alta, our glass-roofed cabin offers an unforgettable Arctic adventure for two in the heart of Swedish Lapland. This is more than simply a place to sleep. It is an opportunity to step away from everyday comfort, slow down and experience the wilderness up close.",
+      "Your adventure begins as you make your way from reception into the peaceful snow-covered arctic landscape. At the end of the path, you will find your own secluded cabin beneath the Arctic sky. On clear winter nights, you can lie in bed and look through the glass roof for the Northern Lights. In summer, the same surroundings are transformed by the golden light of the Midnight Sun.",
+      "Inside, the cabin provides a cosy and simple base for your stay. It features a comfortable double bed, two chairs, a fridge, an electric kettle and a digital radio that can also be used as a Bluetooth speaker. A wood-burning fireplace adds warmth and creates an inviting atmosphere after a day spent exploring the Arctic landscape.",
+      "Life in Swedish Lapland is shaped by nature, and every stay is slightly different. Snowfall, changing weather and the quiet of the forest all add to the feeling of a genuine northern adventure. This cabin is best suited to travellers who value atmosphere, nature and memorable experiences over the comforts of a conventional hotel.",
+      "Camp Alta guests can enjoy a truly unique experience with our wood-fired saunas - one of which even floats on the lake!",
+      "For those wanting to enjoy the beauty of the Midnight Sun in the summer or the breathtaking Northern Lights in the winter, we have several barbecue pits and huts that you can make use of.",
+    ],
+    heroImage: { src: "/cabins/main/glass_cabin.webp", alt: "Glass-roofed cabin with a transparent dome beside the lake at Camp Alta Kiruna Swedish Lapland", imgClass: "w-full object-cover" },
+    heroWrapperClass: "lg:mt-0 mt-8 flex justify-center min-h-[70vh] ",
+    infoLeft: [
+      { label: "Accommodates:", text: " 2 guests" },
+      { label: "Area:", text: " 10m", superscript: true },
+      { label: "Bed:", text: " Double bed (140 cm) (non separable)" },
+      { label: "Cabin amenities:", text: " Refrigerator, water kettle, drinking water tank, DAB radio and bluetooth speaker, electric heater, diesel heater, fireplace" },
+      { label: "WC & showers:", text: " situated in the common service building 90 meters from the cabin." },
+      { label: "Kitchen:", text: " in the common service building situated 90 meters from the cabin." },
+    ],
+    infoRight: [
+      { label: "Heating:", text: " The cabin is heated by electric heating, a diesel heater and a wood-burning fireplace ensuring warmth in the cold winter months" },
+      { label: "WIFI:", text: " Available in the cabin and common service building" },
+      { label: "Parking:", text: " Available free of charge" },
+      { label: "Pet policy:", text: " Unfortunately, we cannot allow pets in the cabin due to allergy concerns" },
+      { label: "Check in:", text: " 15:00 pm" },
+      { label: "Latest Check out:", text: " 11:00 am" },
+    ],
+    bookCtaLabel: "Book here",
+    bookCtaTo: "/booking/Booking-cabins",
+    outro: [
+      "Bed linen and towels are included in the price of the cabin.",
+      "To maintain affordable prices and to make our camp accessible to everyone, we are a self-cleaning camp. You are expected to restore your cabin to the same condition you found it in at your arrival or, alternatively, you can order our cleaning service for a fee of 240 SEK.",
+    ],
+    galleryDesktop: [
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_1.webp", alt: "Glass cabin exterior beside the lake", imgClass: "max-h-screen" }], caption: "The cabin on the lake shore" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_2.webp", alt: "Glass cabin exterior with the terrace and sauna behind", imgClass: "max-h-screen" }], caption: "Terrace and wood-fired sauna" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_3.webp", alt: "Glass cabin entrance with the door open", imgClass: "max-h-screen" }], caption: "Entrance and private terrace" },
+      { images: [
+        { src: "/cabins/glass_cabin/pc/glass_4.webp", alt: "Double bed facing the glass wall", imgClass: "max-h-screen " },
+        { src: "/cabins/glass_cabin/pc/glass_5.webp", alt: "Double bed with reading lights and round window", imgClass: "max-h-screen" },
+      ], caption: "The double bed under the glass roof" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_6.webp", alt: "View of the forest and lake from the bed", imgClass: "max-h-screen" }], caption: "The view from your pillow" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_7.webp", alt: "Seating area with two chairs and the fireplace", imgClass: "max-h-screen" }], caption: "Seating area and fireplace" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_8.webp", alt: "Table with two chairs beside the glass wall", imgClass: "max-h-screen" }], caption: "Table for two by the window" },
+      { images: [
+        { src: "/cabins/glass_cabin/pc/glass_9.webp", alt: "Fridge, heater and wood-burning fireplace", imgClass: "max-h-screen " },
+        { src: "/cabins/glass_cabin/pc/glass_10.webp", alt: "Shelf with drinking water tank and the fireplace", imgClass: "max-h-screen" },
+      ], caption: "Fridge, fireplace and drinking water" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_11.webp", alt: "The cabin interior seen through the glass wall", imgClass: "max-h-screen" }], caption: "Inside, seen through the glass" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_12.webp", alt: "Aerial view of the glass cabin at the water's edge", imgClass: "max-h-screen" }], caption: "The cabin from above" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_13.webp", alt: "Aerial view of the glass roof and terrace", imgClass: "max-h-screen" }], caption: "The glass roof from above" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_14.webp", alt: "The cabin among the trees on the lake shore at dusk", imgClass: "max-h-screen" }], caption: "Dusk over the lake" },
+      { images: [{ src: "/cabins/common_areas/kitchen_pc_1.webp", alt: "Common kitchen", imgClass: "max-h-screen" }], caption: "Common kitchen" },
+    ],
+    galleryMobile: [
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_1.webp", alt: "Glass cabin exterior beside the lake", imgClass: "object-cover" }], caption: "The cabin on the lake shore" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_2.webp", alt: "Glass cabin exterior with the terrace and sauna behind", imgClass: "object-cover" }], caption: "Terrace and wood-fired sauna" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_3.webp", alt: "Glass cabin entrance with the door open", imgClass: "object-cover" }], caption: "Entrance and private terrace" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_4.webp", alt: "Double bed facing the glass wall", imgClass: "object-cover" }], caption: "The double bed under the glass roof" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_5.webp", alt: "Double bed with reading lights and round window", imgClass: "object-cover" }], caption: "Reading lights and round window" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_6.webp", alt: "View of the forest and lake from the bed", imgClass: "object-cover" }], caption: "The view from your pillow" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_7.webp", alt: "Seating area with two chairs and the fireplace", imgClass: "object-cover" }], caption: "Seating area and fireplace" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_8.webp", alt: "Table with two chairs beside the glass wall", imgClass: "object-cover" }], caption: "Table for two by the window" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_9.webp", alt: "Fridge, heater and wood-burning fireplace", imgClass: "object-cover" }], caption: "Fridge, fireplace and drinking water" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_10.webp", alt: "Shelf with drinking water tank and the fireplace", imgClass: "object-cover" }], caption: "Drinking water and fireplace" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_11.webp", alt: "The cabin interior seen through the glass wall", imgClass: "object-cover" }], caption: "Inside, seen through the glass" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_12.webp", alt: "Aerial view of the glass cabin at the water's edge", imgClass: "object-cover" }], caption: "The cabin from above" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_13.webp", alt: "Aerial view of the glass roof and terrace", imgClass: "object-cover" }], caption: "The glass roof from above" },
+      { images: [{ src: "/cabins/glass_cabin/mob/glass_14.webp", alt: "The cabin among the trees on the lake shore at dusk", imgClass: "object-cover" }], caption: "Dusk over the lake" },
+      { images: [{ src: "/cabins/common_areas/kitchen_mob_1.webp", alt: "", imgClass: "object-cover" }], caption: "Common kitchen" },
+    ],
+    seo: {
+      title: "Glass cabin - 10m2, Sleeps 2 | Camp Alta Kiruna",
+      description: "Glass-roofed cabin for two at Camp Alta Kiruna. Watch the Northern Lights from bed through the glass roof, with a wood-burning fireplace and lake views in Swedish Lapland.",
+      image: "/cabins/main/glass_cabin.webp",
+    },
+    jsonLd: {
+      name: "Glass cabin",
+      description: "Glass-roofed cabin for two at Camp Alta Kiruna. Watch the Northern Lights from bed through the glass roof, with a wood-burning fireplace and lake views in Swedish Lapland.",
+      occupancy: 2,
+      floorSizeM2: 10,
+      amenities: ["WiFi", "Heating", "Fridge", "Fireplace", "Bluetooth speaker"],
+    },
+  },
 ]
 
 export const campCabins: CampCabin[] = [...fragment1, ...fragment2]

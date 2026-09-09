@@ -101,6 +101,17 @@
 
   <!-- Individual Cabin Pages -->
   <url>
+    <loc>https://campalta.net/cabins/Glass-cabin</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/main/glass_cabin.webp</image:loc>
+      <image:title>Glass cabin - 10m2, 1 double bed, glass roof</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://campalta.net/cabins/Cabin-D123</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>monthly</changefreq>

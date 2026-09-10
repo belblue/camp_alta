@@ -1110,7 +1110,8 @@ const fragment2: CampCabin[] = [
   // Glass cabin: the only camp cabin with no kitchenette and no in-cabin WC —
   // both are in the common service building 90 m away (other camp cabins are 20 m).
   // It is also the only one where bed linen and towels are INCLUDED, so its
-  // `outro` has no linen-rental paragraph and its cleaning fee is 240 SEK.
+  // `outro` has no linen-rental paragraph. Unlike the other cabins it quotes no
+  // cleaning-fee figure: the amount is deliberately left off the page.
   {
     slug: "Glass-cabin",
     heading: "Glass cabin",
@@ -1145,23 +1146,19 @@ const fragment2: CampCabin[] = [
     bookCtaTo: "/booking/Booking-cabins",
     outro: [
       "Bed linen and towels are included in the price of the cabin.",
-      "To maintain affordable prices and to make our camp accessible to everyone, we are a self-cleaning camp. You are expected to restore your cabin to the same condition you found it in at your arrival or, alternatively, you can order our cleaning service for a fee of 240 SEK.",
+      "To maintain affordable prices and to make our camp accessible to everyone, we are a self-cleaning camp. You are expected to restore your cabin to the same condition you found it in at your arrival or, alternatively, you can order our cleaning service for a fee.",
     ],
     galleryDesktop: [
       { images: [{ src: "/cabins/glass_cabin/pc/glass_1.webp", alt: "Glass cabin exterior beside the lake", imgClass: "max-h-screen" }], caption: "The cabin on the lake shore" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_2.webp", alt: "Glass cabin exterior with the terrace and sauna behind", imgClass: "max-h-screen" }], caption: "Terrace and wood-fired sauna" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_3.webp", alt: "Glass cabin entrance with the door open", imgClass: "max-h-screen" }], caption: "Entrance and private terrace" },
-      { images: [
-        { src: "/cabins/glass_cabin/pc/glass_4.webp", alt: "Double bed facing the glass wall", imgClass: "max-h-screen " },
-        { src: "/cabins/glass_cabin/pc/glass_5.webp", alt: "Double bed with reading lights and round window", imgClass: "max-h-screen" },
-      ], caption: "The double bed under the glass roof" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_4.webp", alt: "Double bed facing the glass wall", imgClass: "max-h-screen" }], caption: "The double bed under the glass roof" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_5.webp", alt: "Double bed with reading lights and round window", imgClass: "max-h-screen" }], caption: "Reading lights and round window" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_6.webp", alt: "View of the forest and lake from the bed", imgClass: "max-h-screen" }], caption: "The view from your pillow" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_7.webp", alt: "Seating area with two chairs and the fireplace", imgClass: "max-h-screen" }], caption: "Seating area and fireplace" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_8.webp", alt: "Table with two chairs beside the glass wall", imgClass: "max-h-screen" }], caption: "Table for two by the window" },
-      { images: [
-        { src: "/cabins/glass_cabin/pc/glass_9.webp", alt: "Fridge, heater and wood-burning fireplace", imgClass: "max-h-screen " },
-        { src: "/cabins/glass_cabin/pc/glass_10.webp", alt: "Shelf with drinking water tank and the fireplace", imgClass: "max-h-screen" },
-      ], caption: "Fridge, fireplace and drinking water" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_9.webp", alt: "Fridge, heater and wood-burning fireplace", imgClass: "max-h-screen" }], caption: "Fridge, heater and fireplace" },
+      { images: [{ src: "/cabins/glass_cabin/pc/glass_10.webp", alt: "Shelf with drinking water tank and the fireplace", imgClass: "max-h-screen" }], caption: "Drinking water and fireplace" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_11.webp", alt: "The cabin interior seen through the glass wall", imgClass: "max-h-screen" }], caption: "Inside, seen through the glass" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_12.webp", alt: "Aerial view of the glass cabin at the water's edge", imgClass: "max-h-screen" }], caption: "The cabin from above" },
       { images: [{ src: "/cabins/glass_cabin/pc/glass_13.webp", alt: "Aerial view of the glass roof and terrace", imgClass: "max-h-screen" }], caption: "The glass roof from above" },

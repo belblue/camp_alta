@@ -513,7 +513,7 @@ const cabins = ref([
   },
   {
     id: "glass-cabin",
-    name: "Glass cabin",
+    name: "Glass cabin 1-2",
     image: "/cabins/main/glass_cabin.webp",
     size: 10,
     price: 3150,

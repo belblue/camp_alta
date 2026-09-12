@@ -1107,18 +1107,22 @@ const fragment2: CampCabin[] = [
       amenities: ["WiFi", "Heating", "Fridge", "Microwave", "TV"],
     },
   },
-  // Glass cabin: the only camp cabin with no kitchenette and no in-cabin WC —
+  // Glass cabin 1-2: two identical units on one page, like Cabin-2ab and
+  // Cabin-D123. Checkfront holds them as separate items (212, 211), which the
+  // booking CTA passes as item_id.
+  // The only camp cabin with no kitchenette and no in-cabin WC —
   // both are in the common service building 90 m away (other camp cabins are 20 m).
   // It is also the only one where bed linen and towels are INCLUDED, so its
   // `outro` has no linen-rental paragraph. Unlike the other cabins it quotes no
   // cleaning-fee figure: the amount is deliberately left off the page.
   {
     slug: "Glass-cabin",
-    heading: "Glass cabin",
+    heading: "Glass cabin 1-2",
     titleLineClass: "line w-1/2 lg:w-1/12",
     intro: [
       "Hidden among the trees at Camp Alta, our glass-roofed cabin offers an unforgettable Arctic adventure for two in the heart of Swedish Lapland. This is more than simply a place to sleep. It is an opportunity to step away from everyday comfort, slow down and experience the wilderness up close.",
       "Your adventure begins as you make your way from reception into the peaceful Arctic landscape. At the end of the path, you will find your own secluded cabin beneath the open sky. In autumn, the birches turn gold around the water and the first clear nights bring the Northern Lights over the glass roof. In winter, snow settles over the forest and you can lie in bed and watch the sky from under the covers. In summer, the same surroundings are transformed by the golden light of the Midnight Sun.",
+      "We have two identical cabins in this category, set apart from each other among the trees so you keep your privacy.",
       "Inside, the cabin provides a cosy and simple base for your stay. It features a comfortable double bed, two chairs, a fridge, an electric kettle and a digital radio that can also be used as a Bluetooth speaker. A wood-burning fireplace adds warmth and creates an inviting atmosphere after a day spent exploring the Arctic landscape.",
       "Life in Swedish Lapland is shaped by nature, and every stay is slightly different. Snowfall, changing weather and the quiet of the forest all add to the feeling of a genuine northern adventure. This cabin is best suited to travellers who value atmosphere, nature and memorable experiences over the comforts of a conventional hotel.",
       "Camp Alta guests can enjoy a truly unique experience with our wood-fired saunas - one of which even floats on the lake!",
@@ -1145,7 +1149,7 @@ const fragment2: CampCabin[] = [
     bookCtaLabel: "Book here",
     // The only cabin with a deep-linked CTA: Checkfront items 212 and 211 are
     // the two glass cabins, so the widget opens filtered to them.
-    bookCtaTo: "/booking/Booking-cabins?item_id=212,211&cabin=Glass%20cabin",
+    bookCtaTo: "/booking/Booking-cabins?item_id=212,211&cabin=Glass%20cabin%201-2",
     outro: [
       "Bed linen and towels are included in the price of the cabin.",
       "To maintain affordable prices and to make our camp accessible to everyone, we are a self-cleaning camp. You are expected to restore your cabin to the same condition you found it in at your arrival or, alternatively, you can order our cleaning service for a fee.",
@@ -1185,12 +1189,12 @@ const fragment2: CampCabin[] = [
       { images: [{ src: "/cabins/common_areas/kitchen_mob_1.webp", alt: "", imgClass: "object-cover" }], caption: "Common kitchen" },
     ],
     seo: {
-      title: "Glass cabin - 10m2, Sleeps 2 | Camp Alta Kiruna",
+      title: "Glass cabin 1-2 - 10m2, Sleeps 2 | Camp Alta Kiruna",
       description: "Glass-roofed cabin for two at Camp Alta Kiruna. Watch the Northern Lights from bed through the glass roof, with a wood-burning fireplace and lake views in Swedish Lapland.",
       image: "/cabins/main/glass_cabin.webp",
     },
     jsonLd: {
-      name: "Glass cabin",
+      name: "Glass cabin 1-2",
       description: "Glass-roofed cabin for two at Camp Alta Kiruna. Watch the Northern Lights from bed through the glass roof, with a wood-burning fireplace and lake views in Swedish Lapland.",
       occupancy: 2,
       floorSizeM2: 10,

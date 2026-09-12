@@ -1143,7 +1143,9 @@ const fragment2: CampCabin[] = [
       { label: "Latest Check out:", text: " 11:00 am" },
     ],
     bookCtaLabel: "Book here",
-    bookCtaTo: "/booking/Booking-cabins",
+    // The only cabin with a deep-linked CTA: Checkfront items 212 and 211 are
+    // the two glass cabins, so the widget opens filtered to them.
+    bookCtaTo: "/booking/Booking-cabins?item_id=212,211&cabin=Glass%20cabin",
     outro: [
       "Bed linen and towels are included in the price of the cabin.",
       "To maintain affordable prices and to make our camp accessible to everyone, we are a self-cleaning camp. You are expected to restore your cabin to the same condition you found it in at your arrival or, alternatively, you can order our cleaning service for a fee.",

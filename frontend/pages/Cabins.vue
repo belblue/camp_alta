@@ -511,6 +511,23 @@ const cabins = ref([
     ],
     facilityScore: 10,
   },
+  {
+    id: "glass-cabin",
+    name: "Glass cabin",
+    image: "/cabins/main/glass_cabin.webp",
+    size: 10,
+    price: 3150,
+    capacity: 2,
+    description: "Open plan, 10m2, 1 double bed, glass roof",
+    facilities: [
+      "refrigerator",
+      "water kettle",
+      "wifi",
+      "fireplace",
+      "bluetooth speaker",
+    ],
+    facilityScore: 5,
+  },
 ]);
 
 // Computed property for sorted cabins

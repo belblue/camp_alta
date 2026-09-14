@@ -37,9 +37,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     apiBackendUrl: process.env.NUXT_API_BACKEND_URL || 'http://localhost:8000',
-    public: {
-      cacheVersion: "2026052002", // Update this when you need to bust cache
-    },
   },
   ssr: true,
   nitro: {

@@ -313,6 +313,51 @@
             </NuxtLink>
           </swiper-slide>
           <swiper-slide class="card-cabin">
+            <NuxtLink class="card w-full" to="/cabins/Glass-cabin">
+              <span class="card__image relative block">
+                <img
+                  src="/cabins/main/glass_cabin.webp"
+                  alt=""
+                  class="z-10"
+                  loading="lazy"
+                />
+              </span>
+              <span class="block lg:h-48 pl-3">
+                <p class="text-4xl caption text-black mt-4">Glass cabin 1-2</p>
+                <p class="line my-3 w-3/5"></p>
+                <p class="text-xl">Open plan, 10m2, 1 double bed, glass roof</p>
+                <button class="btn flex bg-primary mt-4 lg:hidden">
+                  Discover more<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    fill="#fff"
+                    class="w-5 mt-1 ml-3"
+                  >
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="btn flex bg-primary mt-4 opacity-0 button-swiper"
+                >
+                  Discover more<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    fill="#fff"
+                    class="w-5 mt-1 ml-3"
+                  >
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </button>
+              </span>
+            </NuxtLink>
+          </swiper-slide>
+          <swiper-slide class="card-cabin">
             <NuxtLink class="card w-full" to="/cabins/Cabin-3">
               <span class="card__image relative block">
                 <img
@@ -358,7 +403,7 @@
             </NuxtLink>
           </swiper-slide>
           <swiper-slide class="card-cabin">
-            <NuxtLink class="card w-full" href="/cabins/Cabin-4ab">
+            <NuxtLink class="card w-full" to="/cabins/Cabin-4ab">
               <span class="card__image relative block">
                 <img
                   src="/cabins/main/4ab.webp"
@@ -493,7 +538,7 @@
             </NuxtLink>
           </swiper-slide>
           <swiper-slide class="card-cabin">
-            <NuxtLink class="card w-full" to="/cabins/Cabin-4d">
+            <NuxtLink class="card w-full" to="/cabins/Cabin-5">
               <span class="card__image relative block">
                 <img
                   src="/cabins/main/5.webp"
@@ -538,7 +583,7 @@
             </NuxtLink>
           </swiper-slide>
           <swiper-slide class="card-cabin">
-            <NuxtLink class="card w-full" to="/cabins/Cabin-4d">
+            <NuxtLink class="card w-full" to="/cabins/Cabin-6ac">
               <span class="card__image relative block">
                 <img
                   src="/cabins/main/6ac.webp"

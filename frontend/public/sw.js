@@ -1,4 +1,4 @@
-const CACHE_VERSION = '2026072001'; // Update this to bust cache
+const CACHE_VERSION = '2026091401'; // Update this to bust cache
 const STATIC_CACHE = `camp-alta-static-v${CACHE_VERSION}`;
 
 // Assets to cache immediately

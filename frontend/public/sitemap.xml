@@ -36,6 +36,17 @@
   </url>
 
   <url>
+    <loc>https://campalta.net/GlassCabins</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://campalta.net/cabins/glass_cabin/pc/glass_14.webp</image:loc>
+      <image:title>Glass Cabins - Northern Lights from bed at Camp Alta Kiruna</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://campalta.net/Tours</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>

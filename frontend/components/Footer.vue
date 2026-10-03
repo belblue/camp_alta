@@ -39,6 +39,11 @@
 
       <div class="text-center lg:text-left">
         <p>
+          <NuxtLink to="/FaQ" title="Frequently asked questions" class="m-4 text-xl hover:text-primary"
+            >FAQ</NuxtLink
+          >
+        </p>
+        <p>
           <NuxtLink
             to="/docs/Privacy"
             title="privacy policy"

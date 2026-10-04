@@ -143,7 +143,7 @@
           <NuxtLink
             v-if="cabin && cabin.id && cabin.name"
             class="flex justify-center mb-12 mx-2 transition-transform hover:scale-105"
-            :to="`/cabins/${cabin.id}`"
+            :to="cabin.link ?? `/cabins/${cabin.id}`"
           >
             <div>
               <img
@@ -318,6 +318,8 @@ const cabins = ref([
     id: "glass-cabin",
     name: "Glass cabin 1-2",
     image: "/cabins/main/glass_cabin.webp",
+    // The only card that opens a landing instead of the technical page
+    link: "/GlassCabins",
     size: 10,
     price: 3150,
     capacity: 2,

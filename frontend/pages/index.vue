@@ -52,8 +52,13 @@
                 >Camp Alta Cabins</NuxtLink
               >
               <NuxtLink
+                to="/GlassCabins"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
+                >Glass Cabins</NuxtLink
+              >
+              <NuxtLink
                 to="/Booking-lakeside"
-                class="bg-tertiary text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:opacity-90 transition"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
                 >Lakeside Cabins</NuxtLink
               >
             </div>
@@ -313,7 +318,7 @@
             </NuxtLink>
           </swiper-slide>
           <swiper-slide class="card-cabin">
-            <NuxtLink class="card w-full" to="/cabins/Glass-cabin">
+            <NuxtLink class="card w-full" to="/GlassCabins">
               <span class="card__image relative block">
                 <img
                   src="/cabins/main/glass_cabin.webp"

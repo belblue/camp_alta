@@ -38,8 +38,8 @@
         <div class="bg-white rounded-lg shadow-md max-w-2xl mx-auto overflow-hidden md:flex">
           <img src="/lakeside/general/gen_9.webp" alt="Lakeside Aurora Cabins" class="w-full md:w-1/2 h-48 md:h-auto object-cover"/>
           <div class="p-6 flex flex-col justify-center">
-            <p class="text-xl font-bold">Looking for Lakeside Aurora Cabins?</p>
-            <p class="text-gray-600 mt-2">Our premium lakefront cabins have a separate booking system.</p>
+            <p class="text-xl font-bold">Looking for something more premium?</p>
+            <p class="text-gray-600 mt-2">Our Lakeside Aurora Cabins sit right on the lake, with a kitchen in every cabin and bed linen included. They are booked separately.</p>
             <NuxtLink to="/Booking-lakeside" class="btn bg-tertiary text-white mt-4 inline-block text-lg py-2 px-10">Book Lakeside Cabins</NuxtLink>
           </div>
         </div>

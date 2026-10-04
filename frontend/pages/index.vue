@@ -58,7 +58,7 @@
               >
               <NuxtLink
                 to="/Booking-lakeside"
-                class="bg-tertiary text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:opacity-90 transition"
+                class="bg-white text-black rounded-full py-2 px-5 font-bold text-sm lg:text-base hover:bg-secondary transition"
                 >Lakeside Cabins</NuxtLink
               >
             </div>

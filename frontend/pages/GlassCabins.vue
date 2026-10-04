@@ -337,7 +337,6 @@ useSeo({
 
 // Interior shots for the "Inside" carousel; the exteriors go in the gallery below
 const insideSlides = [
-  { src: "/cabins/glass_cabin/pc/glass_4.webp", alt: "Double bed facing the glass wall" },
   { src: "/cabins/glass_cabin/pc/glass_6.webp", alt: "View of the forest and lake from the bed" },
   { src: "/cabins/glass_cabin/pc/glass_5.webp", alt: "Double bed with reading lights and round window" },
   { src: "/cabins/glass_cabin/pc/glass_7.webp", alt: "Seating area with two chairs and the fireplace" },

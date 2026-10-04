@@ -39,11 +39,14 @@
           <p class="barlow text-white text-2xl lg:text-4xl px-4">
             The Northern Lights from your bed
           </p>
-          <NuxtLink
-            :to="cabin.bookCtaTo"
-            class="btn bg-secondary text-black mt-8 text-xl py-2 px-10 font-bold"
-            >Book here</NuxtLink
-          >
+          <!-- .btn is flex: 1 1 auto; wrapped so it does not grow to fill the flex-col hero -->
+          <div class="mt-8">
+            <NuxtLink
+              :to="cabin.bookCtaTo"
+              class="btn bg-secondary text-black text-xl py-2 px-10 font-bold"
+              >Book here</NuxtLink
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -68,9 +71,31 @@
               {{ paragraph }}
             </p>
           </div>
+          <div class="w-full flex justify-center">
+            <video
+              class="h-[300px] md:h-[400px] lg:h-[500px] w-auto rounded-lg"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="/cabins/glass_cabin/video_poster.webp"
+            >
+              <source src="/cabins/glass_cabin/glass_cabin.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inside: interior carousel and the essentials -->
+      <div class="bg-bg2 lg:px-10 pb-10 lg:pb-20" id="inside">
+        <div class="title lg:text-9xl text-left ml-8">Inside -</div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 lg:px-8"
+        >
           <div class="w-full">
             <swiper
-              id="glass-intro-swiper"
+              id="glass-inside-swiper"
               class="z-0"
               :spaceBetween="10"
               :rewind="true"
@@ -90,7 +115,7 @@
               }"
               :slidesPerView="1"
             >
-              <swiper-slide v-for="slide in introSlides" :key="slide.src">
+              <swiper-slide v-for="slide in insideSlides" :key="slide.src">
                 <img
                   :src="slide.src"
                   :alt="slide.alt"
@@ -99,28 +124,6 @@
                 />
               </swiper-slide>
             </swiper>
-          </div>
-        </div>
-      </div>
-
-      <!-- Inside: video and the essentials -->
-      <div class="bg-bg2 lg:px-10 pb-10 lg:pb-20" id="inside">
-        <div class="title lg:text-9xl text-left ml-8">Inside -</div>
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 lg:px-8"
-        >
-          <div class="flex justify-center">
-            <video
-              class="h-[70vh] lg:h-[80vh] w-auto rounded-lg"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              poster="/cabins/glass_cabin/video_poster.webp"
-            >
-              <source src="/cabins/glass_cabin/glass_cabin.mp4" type="video/mp4" />
-            </video>
           </div>
           <div>
             <!-- intro[3] is the "Inside, the cabin provides..." paragraph in data/cabins.ts -->
@@ -332,13 +335,15 @@ useSeo({
   image: "/cabins/glass_cabin/pc/glass_14.webp",
 });
 
-const introSlides = [
-  { src: "/cabins/glass_cabin/pc/glass_1.webp", alt: "Glass cabin exterior beside the lake" },
-  { src: "/cabins/glass_cabin/pc/glass_2.webp", alt: "Glass cabin exterior with the terrace and sauna behind" },
-  { src: "/cabins/glass_cabin/pc/glass_3.webp", alt: "Glass cabin entrance with the door open" },
-  { src: "/cabins/glass_cabin/pc/glass_11.webp", alt: "The cabin interior seen through the glass wall" },
-  { src: "/cabins/glass_cabin/pc/glass_12.webp", alt: "Aerial view of the glass cabin at the water's edge" },
-  { src: "/cabins/glass_cabin/pc/glass_13.webp", alt: "Aerial view of the glass roof and terrace" },
+// Interior shots for the "Inside" carousel; the exteriors go in the gallery below
+const insideSlides = [
+  { src: "/cabins/glass_cabin/pc/glass_4.webp", alt: "Double bed facing the glass wall" },
+  { src: "/cabins/glass_cabin/pc/glass_6.webp", alt: "View of the forest and lake from the bed" },
+  { src: "/cabins/glass_cabin/pc/glass_5.webp", alt: "Double bed with reading lights and round window" },
+  { src: "/cabins/glass_cabin/pc/glass_7.webp", alt: "Seating area with two chairs and the fireplace" },
+  { src: "/cabins/glass_cabin/pc/glass_8.webp", alt: "Table with two chairs beside the glass wall" },
+  { src: "/cabins/glass_cabin/pc/glass_9.webp", alt: "Fridge, heater and wood-burning fireplace" },
+  { src: "/cabins/glass_cabin/pc/glass_10.webp", alt: "Shelf with drinking water tank and the fireplace" },
 ];
 
 const essentials = [
@@ -352,10 +357,10 @@ const essentials = [
 ];
 
 const galleryShots = [
-  { src: "/cabins/glass_cabin/mob/glass_4.webp", alt: "Double bed facing the glass wall" },
-  { src: "/cabins/glass_cabin/mob/glass_6.webp", alt: "View of the forest and lake from the bed" },
-  { src: "/cabins/glass_cabin/mob/glass_7.webp", alt: "Seating area with two chairs and the fireplace" },
-  { src: "/cabins/glass_cabin/mob/glass_8.webp", alt: "Table with two chairs beside the glass wall" },
+  { src: "/cabins/glass_cabin/mob/glass_1.webp", alt: "Glass cabin exterior beside the lake" },
+  { src: "/cabins/glass_cabin/mob/glass_3.webp", alt: "Glass cabin entrance with the door open" },
+  { src: "/cabins/glass_cabin/mob/glass_12.webp", alt: "Aerial view of the glass cabin at the water's edge" },
+  { src: "/cabins/glass_cabin/mob/glass_13.webp", alt: "Aerial view of the glass roof and terrace" },
 ];
 
 const aroundCards = [
